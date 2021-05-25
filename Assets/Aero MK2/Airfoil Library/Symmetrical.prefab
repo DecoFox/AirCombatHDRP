@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5329109961206369847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5329109961206369844}
+  - component: {fileID: 5329109961206369845}
+  m_Layer: 0
+  m_Name: Symmetrical
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5329109961206369844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329109961206369847}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -6.81}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5329109961206369845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5329109961206369847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad340251a2182a54f90fc2204126daee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CLc:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -90
+      value: 0
+      inSlope: -0.028084833
+      outSlope: -0.028084833
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.08950145
+    - serializedVersion: 3
+      time: -45
+      value: -1
+      inSlope: -0.0028525498
+      outSlope: -0.0028525498
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: -20
+      value: -0.6
+      inSlope: -0.010693913
+      outSlope: -0.010693913
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: -14
+      value: -1.1
+      inSlope: -0.010368099
+      outSlope: -0.00093724165
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.06528651
+      outWeight: 0.38872486
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.10861089
+      outSlope: 0.10861089
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.12385689
+      outWeight: 0.06309106
+    - serializedVersion: 3
+      time: 14
+      value: 1.1
+      inSlope: -0.000017974226
+      outSlope: -0.0049149026
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 1
+      outWeight: 0.43286875
+    - serializedVersion: 3
+      time: 20
+      value: 0.6
+      inSlope: -0.01157589
+      outSlope: -0.01157589
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 45
+      value: 1
+      inSlope: -0.0038979603
+      outSlope: -0.0028214986
+      tangentMode: 1
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.22982445
+    - serializedVersion: 3
+      time: 90
+      value: 0
+      inSlope: -0.030770399
+      outSlope: -0.030770399
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08451809
+      outWeight: 0.33333334
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  CDc:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -90
+      value: 1.8
+      inSlope: -0.00028355292
+      outSlope: -0.00028355292
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.18267873
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 90
+      value: 1.8
+      inSlope: 0.00024063993
+      outSlope: 0.00024063993
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.21525557
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  Washout: 0
+  Resolution: 2
+  Sections:
+  - LeadingEdgeVector: {x: 0, y: 0, z: 0}
+    TrailingEdgeVector: {x: 0, y: 0, z: 0}
+    SparVector: {x: 0, y: 0, z: 0}
+    RootChord:
+      LeadPoint: {x: 0, y: 0, z: 0}
+      Position: {x: 0, y: 0, z: 0}
+      ChordLength: 2
+      WashRot: 0
+      TrailPoint: {x: 0, y: 0, z: -2}
+      CenterPoint: {x: 0, y: 0, z: -1}
+    TipChord:
+      LeadPoint: {x: -3.5, y: 0, z: 0}
+      Position: {x: -3.5, y: 0, z: 0}
+      ChordLength: 1.2
+      WashRot: 0
+      TrailPoint: {x: -3.5, y: 0, z: -1.2}
+      CenterPoint: {x: -3.5, y: 0, z: -0.6}
+    InheritRoot: 0
+    MatchDihedral: 0
+    MatchTaper: 0
+    MatchSweep: 0
+    Normal: {x: 0, y: 0, z: 0}
+    Center: {x: 0, y: 0, z: 0}
+    Origin: {fileID: 0}
+  LineMaterial: {fileID: 0}

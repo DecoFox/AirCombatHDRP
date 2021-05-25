@@ -1,0 +1,66 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct LiftSurface
+{
+	float3 Center;
+	float3 Normal;
+	float Area;
+	float Health;
+	float Falloff;
+	float3 LocalVelocity;//Ultimately we'll have to also store global velocity so we can compute drag direction correctly
+	float3 WorldVelocity;
+	float3 SparVector;
+
+	float Lift;
+	float Drag;
+
+	float CL;
+	int Symmetric;
+};
+
+RWStructuredBuffer<LiftSurface> surfaces;
+float C;
+
+[numthreads(64,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	LiftSurface sfc = surfaces[id.x];
+	
+	float RadAoA = -atan(sfc.LocalVelocity.y / sfc.LocalVelocity.z);
+	float DegAoA = RadAoA * 57.2958;
+	float x = clamp(DegAoA, -180, 180);
+
+	//Regressions here:https://elsenaju.eu/Calculator/online-curve-fit.htm
+
+	////float CL = sin(2 * (x/57.2958)) Symmetric, flat-ish wing
+	//f(x)=0.2889048+0.0977222⋅x+0.0017500⋅x2+0.0000044⋅x3+-0.0000105⋅x4 //Clark YH estimation
+	//CL = 0.2889048 + 0.0977222 * x + 0.0017500*pow(x, 2) + 0.0000044 * pow(x, 3) + (-0.0000105 * pow(x, 4)); ----Clark YH expressed in HLSL.
+	//So far, the best approach seems to be calculating both the symmetric wing (for use post stall) and the target wing (Clark YH for now) and taking the maximum.
+
+	
+
+	float CCLs = (sin(2 * (x / 57.2958))); //An unmodified symmetric wing so we can use it for Max.
+	float CLa = max((0.2889048 + 0.0977222 * x + 0.0017500*pow(x, 2) + 0.0000044 * pow(x, 3) + (-0.0000105 * pow(x, 4))), CCLs / 1) * (1 - sfc.Symmetric);
+	float CLs =  CCLs * (sfc.Symmetric); //A multiplied symmetric wing only at work when symmetric is = 1
+
+	float CDa = (-0.0005259 + (-0.0003136*x) + 0.0002904*pow(x,2)) * (1 - sfc.Symmetric);
+	float CDs = (1 - cos(2 * (x / 57.2958))) * (sfc.Symmetric);
+
+	float density = 1.2754;
+
+
+	//sfc.Lift = -(max(CLa, CLs) * ((density * pow(length(sfc.LocalVelocity), 2)) / 2) * sfc.Area * (1 - sfc.Falloff));
+
+
+	//sfc.Lift = ((CLs + CLa) * ((density * pow(length(sfc.LocalVelocity), 2)) / 2) * sfc.Area * (1 - sfc.Falloff));
+	sfc.Lift = 0.5 * density * pow(length(sfc.WorldVelocity), 2) * sfc.Area * (CLa + CLs) * (1 - sfc.Falloff);
+	sfc.Drag = ((CDs + CDa) * ((density * pow(length(sfc.WorldVelocity), 2)) / 2) * sfc.Area * (1 - sfc.Falloff));
+	//sfc.Drag = 0;
+	sfc.CL = 0;
+
+
+
+	surfaces[id.x] = sfc;
+
+}

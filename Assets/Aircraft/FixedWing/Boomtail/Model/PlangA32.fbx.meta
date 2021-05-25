@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: a725955ca323ea844914eed9c1c50e32
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      74: 2781787452537190371
+    second: NacelleGearDoor|NacelleGearDoorAction
+  - first:
+      74: 7993424690963919516
+    second: NacelleGearDoor|NacelleGearDoorAction.003
+  - first:
+      74: 6941126419528090585
+    second: NacelleGearDoor|NoseGearDoorMasterAction
+  - first:
+      74: 6503073175379911627
+    second: FGearDoor.001|NacelleGearDoorAction
+  - first:
+      74: 3604352213665493023
+    second: FGearDoor.001|NacelleGearDoorAction.003
+  - first:
+      74: -1801966194257255788
+    second: FGearDoor.001|NoseGearDoorMasterAction
+  - first:
+      74: 4410626294141711449
+    second: EmptyTarget|NacelleGearDoorAction
+  - first:
+      74: 6212987536508906666
+    second: EmptyTarget|NacelleGearDoorAction.003
+  - first:
+      74: -7940062071478468504
+    second: EmptyTarget|NoseGearDoorMasterAction
+  - first:
+      74: -7180471412129644982
+    second: NacelleGearDoor.001|NacelleGearDoorAction
+  - first:
+      74: -3766107476325025863
+    second: NacelleGearDoor.001|NacelleGearDoorAction.003
+  - first:
+      74: -7356984008077324124
+    second: NacelleGearDoor.001|NoseGearDoorMasterAction
+  - first:
+      74: 3426582035736180085
+    second: EmptyTarget.001|NacelleGearDoorAction
+  - first:
+      74: -2451201390973770648
+    second: EmptyTarget.001|NacelleGearDoorAction.003
+  - first:
+      74: 2183221507064975136
+    second: EmptyTarget.001|NoseGearDoorMasterAction
+  - first:
+      74: -1627850954625727317
+    second: NoseGearDoorMaster|NacelleGearDoorAction
+  - first:
+      74: -2083044235220505417
+    second: NoseGearDoorMaster|NacelleGearDoorAction.003
+  - first:
+      74: -2256953801690529633
+    second: NoseGearDoorMaster|NoseGearDoorMasterAction
+  - first:
+      74: 1853451804141798028
+    second: FGearDoor.002|NacelleGearDoorAction
+  - first:
+      74: -978451595510780939
+    second: FGearDoor.002|NacelleGearDoorAction.003
+  - first:
+      74: -4881369909799728471
+    second: FGearDoor.002|NoseGearDoorMasterAction
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
