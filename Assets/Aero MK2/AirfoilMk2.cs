@@ -464,7 +464,10 @@ public class AirfoilMk2 : MonoBehaviour
                 float CL = 0;
                 float CD = E.CDcurve.Evaluate(AoA);
                 float UCL = E.CLcurve.Evaluate(AoA);
+                float DeflCL = UCL; //Default DeflCL to UCL so there's no delta unless we change it later.
+                float DeflCD = CD;
 
+                Vector3 CenterRoot = Vector3.Lerp(E.CenterLeading, E.CenterTrailing, 1);
                 if (E.CSChordFraction > 0) //CL code for present control surface
                 {
                     //Modifying the CL relationship
@@ -473,38 +476,53 @@ public class AirfoilMk2 : MonoBehaviour
                     //So here we're modifying the AoA to measure a chord line from the leading edge to the trailing edge of the control surface
 
                     float ChordMargin = 1 - E.CSChordFraction;
-                    Vector3 CenterRoot = Vector3.Lerp(E.CenterLeading, E.CenterTrailing, ChordMargin);
+                    CenterRoot = Vector3.Lerp(E.CenterLeading, E.CenterTrailing, ChordMargin);
                     Vector3 CSTE = CenterRoot + new Vector3(0, (Mathf.Cos(S.Link.Input - 1.57f) * (S.ControlSurfaceChord * E.CenterChordDistance)), (Mathf.Sin(S.Link.Input - 1.57f) * (S.ControlSurfaceChord * E.CenterChordDistance)));
-                    Debug.DrawLine(transform.TransformPoint(E.Center) + (GlobalSpeed * Time.fixedDeltaTime), transform.TransformPoint(CSTE) + (GlobalSpeed * Time.fixedDeltaTime), Color.yellow);
+                    Debug.DrawLine(transform.TransformPoint(CenterRoot) + (GlobalSpeed * Time.fixedDeltaTime), transform.TransformPoint(CSTE) + (GlobalSpeed * Time.fixedDeltaTime), Color.yellow);
 
                     float AdAoA = Mathf.Atan2(-CenterRoot.y + CSTE.y, E.CenterChordDistance) * Mathf.Rad2Deg;
-                    float DeflCL = E.CLcurve.Evaluate(AoA + (-AdAoA / 1)); //Control surface deflection changes camber, which is expressed here identically to a shift in AoA since it effectively is. AoA is increased by the angle drawn between the normal chord line and a line drawn from the leading edge to the trailing edge of the surface 
+                    DeflCL = E.CLcurve.Evaluate(AoA + (-AdAoA / 1)); //Control surface deflection changes camber, which is expressed here identically to a shift in AoA since it effectively is. AoA is increased by the angle drawn between the normal chord line and a line drawn from the leading edge to the trailing edge of the surface 
+                    DeflCD = E.CDcurve.Evaluate(AoA + (-AdAoA / 1));
                     //print(-CenterRoot.y + CSTE.y);
 
+                    AoA = AoA + (-AdAoA); //Update AoA so we can refer to resultant AoA outside this conditional
 
 
                     //float DCL = Mathf.Sqrt(E.CSChordFraction) * UCL * Mathf.Sin(-S.Link.Input); //This expresses delta coefficient lift from inputs
                     //^^Something is weird with this figure. Reversed on the ailerons but not elevator. Very strange.
                     //CL = UCL + DCL;
                     CL = DeflCL;
+                    CD = DeflCD;
 
                 }
                 else //CL code for absent control surface
                 {
                     CL = UCL;
                 }
+
+                Vector3 CenterOfPressure = Vector3.Lerp(E.Center + new Vector3(0, 0, E.CenterChordDistance / 4), E.Center + new Vector3(0, 0, -E.CenterChordDistance / 6), Mathf.Clamp(1 - Mathf.Abs(AoA) / 15, 0, 1)); //It would probaby be best to find the max of the cl curve, because we should reach the quarter-chord point at max lift. Better than using a fixed 15, but additional overhead to find max of the curve
+          
                 //float Falloff = E.Falloff;
                 //print(Falloff);
                 float Falloff = 0;
                 float density = 1.2754f;
                 float Lift = 0.5f * density * Mathf.Pow(GlobalSpeed.magnitude, 2) * E.Area * (CL) * (1 - Falloff);
+                float ULift = 0.5f * density * Mathf.Pow(GlobalSpeed.magnitude, 2) * E.Area * (UCL) * (1 - Falloff); //Lift untouched by control surface shape changes
+                float DeltaLift = Lift - ULift;
+
                 float Drag = 0.5f * density * Mathf.Pow(GlobalSpeed.magnitude, 2) * E.Area * (CD);
 
-                Debug.DrawRay(transform.TransformPoint(E.Center) + (GlobalSpeed * Time.fixedDeltaTime), Vector3.Normalize((Vector3.Cross(-GlobalSpeed, transform.TransformVector(E.SparVec)))) * (E.NormalInversion * Lift / 4000), Color.cyan);
-                R.AddForceAtPosition(Vector3.Normalize((Vector3.Cross(-GlobalSpeed, transform.TransformVector(E.SparVec)))) * Lift * E.NormalInversion, transform.TransformPoint(E.Center));
+                Vector3 EffectiveAoA = (Vector3.Normalize((Vector3.Cross(-GlobalSpeed, transform.TransformVector(E.SparVec))) * E.NormalInversion) + E.T.up) / 2;
+                //Debug.DrawRay(transform.TransformPoint(CenterOfPressure) + (GlobalSpeed * Time.fixedDeltaTime), EffectiveAoA * 5, Color.yellow);
+                //Debug.DrawRay(transform.TransformPoint(CenterOfPressure) + (GlobalSpeed * Time.fixedDeltaTime), E.T.up * 5, Color.red);
 
-                Debug.DrawRay(transform.TransformPoint(E.Center) + (GlobalSpeed * Time.fixedDeltaTime), Vector3.Normalize(-GlobalSpeed) * (Drag / 4000), Color.red);
-                R.AddForceAtPosition(Vector3.Normalize(-GlobalSpeed) * Drag, transform.TransformPoint(E.Center));
+                Debug.DrawRay(transform.TransformPoint(CenterOfPressure) + (GlobalSpeed * Time.fixedDeltaTime), Vector3.Normalize(EffectiveAoA) * (1 * Lift / 4000), Color.cyan);
+                R.AddForceAtPosition(Vector3.Normalize(EffectiveAoA) * Lift * 1, transform.TransformPoint(CenterOfPressure));
+
+                Debug.DrawRay(transform.TransformPoint(CenterOfPressure) + (GlobalSpeed * Time.fixedDeltaTime), Vector3.Normalize(-GlobalSpeed) * (Drag / 4000), Color.red);
+                R.AddForceAtPosition(Vector3.Normalize(-GlobalSpeed) * Drag, transform.TransformPoint(CenterOfPressure));
+
+                R.AddRelativeTorque(new Vector3(DeltaLift, 0, 0) * Vector3.Distance(E.Center, CenterRoot));
                 //print(AoA);
                 //print(GlobalSpeed.magnitude);
             }
