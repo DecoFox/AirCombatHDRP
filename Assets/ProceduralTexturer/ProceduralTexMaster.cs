@@ -20,6 +20,8 @@ namespace ProceduralTexMaster
 
         public float SteepWeight = 1;
         public float HeightWeight = 1;
+
+        public float Randomness;
     }
 
     [System.Serializable]
@@ -32,5 +34,7 @@ namespace ProceduralTexMaster
 
         public float SteepWeight;
         public float HeightWeight;
+
+        public float Randomness;
     }
 }

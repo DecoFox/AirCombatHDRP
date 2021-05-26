@@ -230,36 +230,6 @@ Transform:
   m_Father: {fileID: 2072617458}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &10737011
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 10737012}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &10737012
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10737011}
-  m_LocalRotation: {x: 0.0000007841736, y: 0.00006110445, z: -0.029132888, w: 0.99957556}
-  m_LocalPosition: {x: 2.7749512, y: -0.16186814, z: 0.34336987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &13444393
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +259,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1160103832}
   m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &18257774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 18257775}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &18257775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18257774}
+  m_LocalRotation: {x: 0.0000034812829, y: 0.000000029801182, z: 2.6006886e-10, w: 1}
+  m_LocalPosition: {x: -0.90019566, y: -0.052496172, z: 0.22367863}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &19311538
 GameObject:
@@ -385,36 +385,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 19311538}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &22854600
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 22854601}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &22854601
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22854600}
-  m_LocalRotation: {x: -0, y: -0, z: 0.067946315, w: 0.997689}
-  m_LocalPosition: {x: -3.3249023, y: -0.45500004, z: 0.8869238}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1875415297}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30134183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1230,7 @@ GameObject:
   - component: {fileID: 98671113}
   - component: {fileID: 98671115}
   - component: {fileID: 98671114}
+  - component: {fileID: 98671116}
   m_Layer: 0
   m_Name: Terrain_4_0_25ad62ac-afd5-4670-87ab-3e0071699aad
   m_TagString: Untagged
@@ -1325,36 +1296,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
---- !u!1 &102204720
-GameObject:
+--- !u!114 &98671116
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 102204721}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &102204721
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102204720}
-  m_LocalRotation: {x: -0, y: -0, z: -0.06794632, w: 0.997689}
-  m_LocalPosition: {x: 1.425, y: -0.19499981, z: 0.053915977}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1715041057}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 98671112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &109774049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,6 +1530,36 @@ Transform:
   m_Father: {fileID: 1032323197}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &122936502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 122936503}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &122936503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122936502}
+  m_LocalRotation: {x: 0.0000116555, y: -0.00029422995, z: 0.000014831478, w: 1}
+  m_LocalPosition: {x: -5.084766, y: -0.07122313, z: 0.5901071}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124755153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,6 +1589,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1160103832}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &129695931
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129695932}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129695932
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129695931}
+  m_LocalRotation: {x: 0.0000024177132, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.275196, y: 0.0095695015, z: 0.6967565}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &130726756
 GameObject:
@@ -2346,6 +2426,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &197443900
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 197443901}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &197443901
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197443900}
+  m_LocalRotation: {x: 0.000002518296, y: -0.0002764295, z: -0.000023627279, w: 1}
+  m_LocalPosition: {x: 3.895313, y: -0.15207675, z: 0.48345417}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &197575757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2457,36 +2567,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199555056}
   m_Mesh: {fileID: 5177497853553807433, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
---- !u!1 &210737689
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 210737690}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &210737690
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 210737689}
-  m_LocalRotation: {x: 0.0000010188669, y: 0.000000034517143, z: -0.03391014, w: 0.99942493}
-  m_LocalPosition: {x: -3.8950684, y: -0.15208107, z: 0.4832104}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &212224850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2516,6 +2596,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &217064363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 217064364}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &217064364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217064363}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.4748038, y: -0.06500733, z: -0.36185646}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1715041057}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &222428371
 GameObject:
@@ -2744,6 +2854,7 @@ GameObject:
   - component: {fileID: 242347098}
   - component: {fileID: 242347100}
   - component: {fileID: 242347099}
+  - component: {fileID: 242347101}
   m_Layer: 0
   m_Name: Terrain_4_2_da68f467-8c9a-4158-b5f1-b5ee1ed30466
   m_TagString: Untagged
@@ -2809,6 +2920,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &242347101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242347097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &248979778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,7 +3341,7 @@ MonoBehaviour:
   Input: 0
   Name: AileronLeft
   Invert: 0
---- !u!1 &249621769
+--- !u!1 &254594330
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3159,7 +3349,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 249621770}
+  - component: {fileID: 254594331}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -3167,19 +3357,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &249621770
+--- !u!4 &254594331
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249621769}
-  m_LocalRotation: {x: -0.0000067783635, y: -0.00009953003, z: 0.067946315, w: 0.997689}
-  m_LocalPosition: {x: -2.3749511, y: -0.32499993, z: 0.47090816}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 254594330}
+  m_LocalRotation: {x: 0.0000017490236, y: 0.00012185013, z: -0.000004974167, w: 1}
+  m_LocalPosition: {x: 0.29960936, y: -0.01747803, z: 0.501187}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 1875415297}
-  m_RootOrder: 2
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263346793
 GameObject:
@@ -3725,8 +3915,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270644444}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4038, y: 5, z: -8699}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 2911.8, y: 570.49, z: -11633.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 574224903}
@@ -3739,7 +3929,103 @@ Transform:
   - {fileID: 290763644}
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &271252733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 271252734}
+  - component: {fileID: 271252737}
+  - component: {fileID: 271252736}
+  - component: {fileID: 271252735}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &271252734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271252733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16303, y: 63, z: 12930}
+  m_LocalScale: {x: 1600, y: 1, z: 1600}
+  m_Children: []
+  m_Father: {fileID: 421328592}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &271252735
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271252733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &271252736
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271252733}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a879a83e061e84a4786b516c4b300598, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &271252737
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 271252733}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &274874518
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,36 +4121,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274874518}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &276179334
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 276179335}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &276179335
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276179334}
-  m_LocalRotation: {x: 0.000005465438, y: -0.00008025169, z: -0.06794632, w: 0.997689}
-  m_LocalPosition: {x: 0.47504884, y: -0.06500018, z: -0.36209965}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1715041057}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &280052634
 GameObject:
   m_ObjectHideFlags: 0
@@ -4265,10 +4521,10 @@ Transform:
   m_LocalPosition: {x: 4.073, y: 0.225, z: -8.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 992353924}
-  - {fileID: 1273947616}
-  - {fileID: 978064855}
-  - {fileID: 985928731}
+  - {fileID: 990925922}
+  - {fileID: 590266267}
+  - {fileID: 1343802944}
+  - {fileID: 1174993061}
   m_Father: {fileID: 270644452}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4444,7 +4700,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -1.47}
       TrailTip: {x: 0, y: 0.77, z: -1.465}
       CSChordFraction: 0
-      T: {fileID: 992353924}
+      T: {fileID: 990925922}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -4581,7 +4837,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0.77, z: -1.465}
       TrailTip: {x: 0, y: 1.54, z: -1.46}
       CSChordFraction: 0
-      T: {fileID: 1273947616}
+      T: {fileID: 590266267}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -4718,7 +4974,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 1.54, z: -1.46}
       TrailTip: {x: 0, y: 2.31, z: -1.455}
       CSChordFraction: 0
-      T: {fileID: 978064855}
+      T: {fileID: 1343802944}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -4855,7 +5111,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 2.31, z: -1.455}
       TrailTip: {x: 0, y: 3.08, z: -1.45}
       CSChordFraction: 0
-      T: {fileID: 985928731}
+      T: {fileID: 1174993061}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -5049,6 +5305,7 @@ GameObject:
   - component: {fileID: 301972002}
   - component: {fileID: 301972004}
   - component: {fileID: 301972003}
+  - component: {fileID: 301972005}
   m_Layer: 0
   m_Name: Terrain_1_1_a85de1e5-74f5-4eb3-8522-284962fdf31f
   m_TagString: Untagged
@@ -5114,6 +5371,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &301972005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301972001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &313761473
 GameObject:
   m_ObjectHideFlags: 1
@@ -5158,36 +5494,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &323257328
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 323257329}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &323257329
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323257328}
-  m_LocalRotation: {x: 0.0000028368086, y: 0.00000009621726, z: -0.03391014, w: 0.99942493}
-  m_LocalPosition: {x: -11.306201, y: 0.35134667, z: 1.1473709}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &324318768
 GameObject:
@@ -6033,36 +6339,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 355941274}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &362633336
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 362633337}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &362633337
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 362633336}
-  m_LocalRotation: {x: -0, y: -0, z: 0.06794632, w: 0.997689}
-  m_LocalPosition: {x: -1.425, y: -0.19499981, z: 0.053915977}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1875415297}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &365922023
 GameObject:
   m_ObjectHideFlags: 0
@@ -6247,36 +6523,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &381349649
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 381349650}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &381349650
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 381349649}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.0000019073486, y: 1.1550001, z: -0.2532034}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 790446398}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387816172
 GameObject:
@@ -6660,6 +6906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 421328592}
   - component: {fileID: 421328591}
+  - component: {fileID: 421328593}
   m_Layer: 0
   m_Name: TerrainGroup_0
   m_TagString: Untagged
@@ -6716,9 +6963,89 @@ Transform:
   - {fileID: 242347098}
   - {fileID: 727648280}
   - {fileID: 719610565}
+  - {fileID: 271252734}
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &421328593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421328590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3acdb369883ad5444b7c4b990f6c04c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Run: 0
+  TileTextures:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &422849931
 GameObject:
   m_ObjectHideFlags: 0
@@ -7259,36 +7586,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1715462870}
   m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &475203386
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 475203387}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &475203387
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475203386}
-  m_LocalRotation: {x: 0.0000010188669, y: -0.000000034517143, z: 0.03391014, w: 0.99942493}
-  m_LocalPosition: {x: 3.8950684, y: -0.15208107, z: 0.4832104}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &486536806
 GameObject:
@@ -8209,6 +8506,36 @@ Transform:
   m_Father: {fileID: 2072617458}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &538888882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 538888883}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &538888883
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 538888882}
+  m_LocalRotation: {x: -0.000000028063365, y: -0.00045290584, z: 0.00006197555, w: 0.9999999}
+  m_LocalPosition: {x: 3.32539, y: -0.45502198, z: 0.8869219}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1715041057}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556161746
 GameObject:
   m_ObjectHideFlags: 0
@@ -8238,6 +8565,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &559029456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 559029457}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &559029457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559029456}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4748057, y: -0.06500733, z: -0.36185646}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1875415297}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560404310
 GameObject:
@@ -8870,36 +9227,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!1 &573603622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 573603623}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &573603623
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 573603622}
-  m_LocalRotation: {x: -0.0000015776604, y: 0.00000004595495, z: 0.029133959, w: 0.99957556}
-  m_LocalPosition: {x: -1.7249024, y: -0.10063043, z: 0.17156087}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &574224902
 GameObject:
   m_ObjectHideFlags: 0
@@ -9169,6 +9496,36 @@ Transform:
   m_Father: {fileID: 959300696}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &590266266
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 590266267}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &590266267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590266266}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00024175644, y: 1.1550049, z: -0.2532053}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 290763644}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &592732723
 GameObject:
   m_ObjectHideFlags: 0
@@ -9210,6 +9567,7 @@ GameObject:
   - component: {fileID: 601435803}
   - component: {fileID: 601435805}
   - component: {fileID: 601435804}
+  - component: {fileID: 601435806}
   m_Layer: 0
   m_Name: Terrain_3_3_f399e5fd-8882-4f65-9657-a1bc32f1aa86
   m_TagString: Untagged
@@ -9275,6 +9633,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &601435806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601435802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &612012049
 GameObject:
   m_ObjectHideFlags: 0
@@ -9367,6 +9804,7 @@ GameObject:
   - component: {fileID: 614450560}
   - component: {fileID: 614450562}
   - component: {fileID: 614450561}
+  - component: {fileID: 614450563}
   m_Layer: 0
   m_Name: Terrain_3_0_fb3c34bb-b00e-4dae-a6e4-d59d824ff431
   m_TagString: Untagged
@@ -9432,6 +9870,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &614450563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614450559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &615298441
 GameObject:
   m_ObjectHideFlags: 0
@@ -9545,6 +10062,36 @@ MonoBehaviour:
   TipPosition: {x: -1250.16, y: 17.049, z: -2373.83}
   RootPosition: {x: -1246.36, y: 17.549, z: -2375.5}
   ParentWing: {fileID: 0}
+--- !u!1 &621030280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 621030281}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &621030281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621030280}
+  m_LocalRotation: {x: 0.0000034812829, y: 0.000000029801182, z: 2.6006886e-10, w: 1}
+  m_LocalPosition: {x: 0.9001954, y: -0.05249616, z: 0.22367804}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625103709
 GameObject:
   m_ObjectHideFlags: 0
@@ -9574,36 +10121,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &632746179
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 632746180}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &632746180
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 632746179}
-  m_LocalRotation: {x: 0.0000071674585, y: -0.0000002431625, z: 0.03391012, w: 0.99942493}
-  m_LocalPosition: {x: 10.038867, y: 0.26525253, z: 1.0335463}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &633137323
 GameObject:
@@ -9694,6 +10211,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &640045051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 640045052}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &640045052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640045051}
+  m_LocalRotation: {x: 0.0000072391695, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.7751958, y: -0.16184902, z: 0.34385902}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646834439
 GameObject:
@@ -10057,6 +10604,7 @@ GameObject:
   - component: {fileID: 671523642}
   - component: {fileID: 671523644}
   - component: {fileID: 671523643}
+  - component: {fileID: 671523645}
   m_Layer: 0
   m_Name: Terrain_1_2_71b555fa-39ac-4fa0-abea-7511f4307188
   m_TagString: Untagged
@@ -10122,6 +10670,115 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &671523645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671523641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
+--- !u!1 &673996341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 673996342}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &673996342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673996341}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.4250011, y: -0.19501221, z: 0.054403305}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1875415297}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676375802
 GameObject:
   m_ObjectHideFlags: 0
@@ -10465,36 +11122,6 @@ Transform:
   m_Father: {fileID: 2072617458}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &694068860
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 694068861}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &694068861
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694068860}
-  m_LocalRotation: {x: 0.0000021606684, y: 0.000000073283445, z: -0.033910133, w: 0.99942493}
-  m_LocalPosition: {x: -5.0850096, y: -0.07125173, z: 0.59010607}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705750979
 GameObject:
   m_ObjectHideFlags: 0
@@ -10622,7 +11249,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713179394}
   m_Mesh: {fileID: 9091128955637069934, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
---- !u!1 &716562372
+--- !u!1 &715668412
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10630,7 +11257,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 716562373}
+  - component: {fileID: 715668413}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -10638,19 +11265,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &716562373
+--- !u!4 &715668413
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716562372}
-  m_LocalRotation: {x: -0.000002023764, y: 0.000000068655936, z: 0.033910137, w: 0.99942493}
-  m_LocalPosition: {x: 6.274951, y: 0.00957762, z: 0.69700176}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 715668412}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.3751945, y: -0.3250171, z: 0.47066307}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 6
+  m_Father: {fileID: 1715041057}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &719260517
 GameObject:
@@ -10746,6 +11373,7 @@ GameObject:
   - component: {fileID: 719610565}
   - component: {fileID: 719610567}
   - component: {fileID: 719610566}
+  - component: {fileID: 719610568}
   m_Layer: 0
   m_Name: Terrain_4_4_912d9632-1328-4557-abf1-9b3019aca1d5
   m_TagString: Untagged
@@ -10811,6 +11439,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &719610568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719610564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &725974107
 GameObject:
   m_ObjectHideFlags: 0
@@ -10852,6 +11559,7 @@ GameObject:
   - component: {fileID: 727648280}
   - component: {fileID: 727648282}
   - component: {fileID: 727648281}
+  - component: {fileID: 727648283}
   m_Layer: 0
   m_Name: Terrain_4_3_bce7364a-fbd6-4c0c-bd89-d2cb468c9396
   m_TagString: Untagged
@@ -10917,6 +11625,115 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &727648283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727648279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
+--- !u!1 &737449281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 737449282}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &737449282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737449281}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00024366379, y: 0.38498536, z: -0.06448269}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 790446398}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742137272
 GameObject:
   m_ObjectHideFlags: 0
@@ -11013,6 +11830,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742137272}
   m_Mesh: {fileID: 8871026824040203351, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
+--- !u!1 &751014625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 751014626}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &751014626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751014625}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.3751965, y: -0.3250171, z: 0.47066307}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1875415297}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &758492269
 GameObject:
   m_ObjectHideFlags: 0
@@ -11124,36 +11971,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773062355}
   m_Mesh: {fileID: -1162370539759553097, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
---- !u!1 &773591476
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 773591477}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &773591477
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773591476}
-  m_LocalRotation: {x: 0.0000021606684, y: -0.000000073283445, z: 0.033910133, w: 0.99942493}
-  m_LocalPosition: {x: 5.0850096, y: -0.07125173, z: 0.59010607}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &778659483
 GameObject:
   m_ObjectHideFlags: 0
@@ -11297,6 +12114,36 @@ Transform:
   m_Father: {fileID: 1924459851}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &788567940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 788567941}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &788567941
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788567940}
+  m_LocalRotation: {x: 0.000009841285, y: -0.00020726748, z: 0.000008464563, w: 1}
+  m_LocalPosition: {x: 1.7253907, y: -0.1006009, z: 0.17131685}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790446397
 GameObject:
   m_ObjectHideFlags: 0
@@ -11325,10 +12172,10 @@ Transform:
   m_LocalPosition: {x: -4.073, y: 0.225, z: -8.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1405479484}
-  - {fileID: 381349650}
-  - {fileID: 1285184574}
-  - {fileID: 1415604051}
+  - {fileID: 737449282}
+  - {fileID: 1172704826}
+  - {fileID: 913497172}
+  - {fileID: 1521780405}
   m_Father: {fileID: 270644452}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11504,7 +12351,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -1.47}
       TrailTip: {x: 0, y: 0.77, z: -1.465}
       CSChordFraction: 0
-      T: {fileID: 1405479484}
+      T: {fileID: 737449282}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -11641,7 +12488,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0.77, z: -1.465}
       TrailTip: {x: 0, y: 1.54, z: -1.46}
       CSChordFraction: 0
-      T: {fileID: 381349650}
+      T: {fileID: 1172704826}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -11778,7 +12625,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 1.54, z: -1.46}
       TrailTip: {x: 0, y: 2.31, z: -1.455}
       CSChordFraction: 0
-      T: {fileID: 1285184574}
+      T: {fileID: 913497172}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -11915,7 +12762,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 2.31, z: -1.455}
       TrailTip: {x: 0, y: 3.08, z: -1.45}
       CSChordFraction: 0
-      T: {fileID: 1415604051}
+      T: {fileID: 1521780405}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -12107,6 +12954,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &793184709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 793184710}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &793184710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793184709}
+  m_LocalRotation: {x: -0.0000074757254, y: 0.00000005960237, z: 5.2013777e-10, w: 1}
+  m_LocalPosition: {x: -10.038868, y: 0.2652578, z: 1.0340358}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &793861517
 GameObject:
@@ -12564,7 +13441,7 @@ Transform:
   m_Father: {fileID: 1715462870}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &844141347
+--- !u!1 &844622071
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12572,7 +13449,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 844141348}
+  - component: {fileID: 844622072}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -12580,19 +13457,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &844141348
+--- !u!4 &844622072
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844141347}
-  m_LocalRotation: {x: -0.0000035809353, y: -0.00000012150849, z: -0.033910144, w: 0.99942493}
-  m_LocalPosition: {x: -7.5037107, y: 0.09304765, z: 0.8068737}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 844622071}
+  m_LocalRotation: {x: 0.000000028067003, y: 0.00045290584, z: 0.00006197555, w: 0.9999999}
+  m_LocalPosition: {x: -3.325392, y: -0.45502198, z: 0.8869238}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 7
+  m_Father: {fileID: 1875415297}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &846493424
 GameObject:
@@ -12661,6 +13538,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &847878803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847878804}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &847878804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847878803}
+  m_LocalRotation: {x: 0.000006527639, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.306447, y: 0.35136247, z: 1.1476135}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &848289784
 GameObject:
   m_ObjectHideFlags: 0
@@ -12702,6 +13609,7 @@ GameObject:
   - component: {fileID: 862207975}
   - component: {fileID: 862207977}
   - component: {fileID: 862207976}
+  - component: {fileID: 862207978}
   m_Layer: 0
   m_Name: Terrain_3_4_6bc2e205-b3b2-4892-be31-58a21acf177e
   m_TagString: Untagged
@@ -12767,6 +13675,115 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &862207978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862207974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
+--- !u!1 &863243713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 863243714}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &863243714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863243713}
+  m_LocalRotation: {x: 0.0000025089823, y: 0.0002763698, z: -0.000013934438, w: 1}
+  m_LocalPosition: {x: -3.895313, y: -0.15207677, z: 0.48345512}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865394310
 GameObject:
   m_ObjectHideFlags: 0
@@ -13133,6 +14150,7 @@ GameObject:
   - component: {fileID: 877331734}
   - component: {fileID: 877331736}
   - component: {fileID: 877331735}
+  - component: {fileID: 877331737}
   m_Layer: 0
   m_Name: Terrain_3_2_d33d7093-e7a3-4d72-a1a6-a8dc0a5dabad
   m_TagString: Untagged
@@ -13198,36 +14216,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
---- !u!1 &885990189
-GameObject:
+--- !u!114 &877331737
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 885990190}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &885990190
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 885990189}
-  m_LocalRotation: {x: -0, y: -0, z: -0.067946315, w: 0.997689}
-  m_LocalPosition: {x: 3.3249023, y: -0.45500004, z: 0.8869238}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1715041057}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 877331733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &890568876
 GameObject:
   m_ObjectHideFlags: 0
@@ -13436,6 +14503,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906607759}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &913497171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 913497172}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &913497172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913497171}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00024366379, y: 1.9250244, z: -0.4419241}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 790446398}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &918873561
 GameObject:
   m_ObjectHideFlags: 0
@@ -14504,36 +15601,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 971264426}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &978064854
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 978064855}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &978064855
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 978064854}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.0000019073486, y: 1.9249996, z: -0.44167995}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 290763644}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &981831262
 GameObject:
   m_ObjectHideFlags: 0
@@ -14876,7 +15943,7 @@ Transform:
   m_Father: {fileID: 890568877}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &985928730
+--- !u!1 &990925921
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14884,7 +15951,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 985928731}
+  - component: {fileID: 990925922}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -14892,46 +15959,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &985928731
+--- !u!4 &990925922
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 985928730}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.0000019073486, y: 2.6950002, z: -0.6301565}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 290763644}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &992353923
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 992353924}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &992353924
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992353923}
-  m_LocalRotation: {x: 0.00000012013466, y: 0.00000012013466, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.0000019073486, y: 0.38500014, z: -0.06472683}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 990925921}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00024175644, y: 0.38498536, z: -0.064484596}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
   m_Father: {fileID: 290763644}
   m_RootOrder: 0
@@ -15257,6 +16294,7 @@ GameObject:
   - component: {fileID: 1008597857}
   - component: {fileID: 1008597859}
   - component: {fileID: 1008597858}
+  - component: {fileID: 1008597860}
   m_Layer: 0
   m_Name: Terrain_0_2_6afa835a-195a-4bd5-8886-6d16c279f0ed
   m_TagString: Untagged
@@ -15322,6 +16360,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1008597860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008597856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1012370320
 GameObject:
   m_ObjectHideFlags: 0
@@ -15473,6 +16590,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 59
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1019106196
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1019106197}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1019106197
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019106196}
+  m_LocalRotation: {x: 0.000006527639, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -11.306447, y: 0.3513624, z: 1.1476173}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023811921
 GameObject:
@@ -16941,36 +18088,6 @@ Transform:
   m_Father: {fileID: 1216587200}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1057447190
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1057447191}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1057447191
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057447190}
-  m_LocalRotation: {x: -0.00000068638474, y: -0.000000019994332, z: -0.029133959, w: 0.99957556}
-  m_LocalPosition: {x: 0.30009764, y: -0.017499011, z: 0.5011869}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080850288
 GameObject:
   m_ObjectHideFlags: 0
@@ -17126,36 +18243,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081821070}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1085721845
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1085721846}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1085721846
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085721845}
-  m_LocalRotation: {x: 0.0000007841736, y: -0.00006110445, z: 0.029132888, w: 0.99957556}
-  m_LocalPosition: {x: -2.7749512, y: -0.16186814, z: 0.34336987}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1092578542
 GameObject:
   m_ObjectHideFlags: 0
@@ -17952,6 +19039,7 @@ GameObject:
   - component: {fileID: 1133522358}
   - component: {fileID: 1133522360}
   - component: {fileID: 1133522359}
+  - component: {fileID: 1133522361}
   m_Layer: 0
   m_Name: Terrain_2_0_4e48e6bd-23ac-4035-a396-2c74b6c7b81d
   m_TagString: Untagged
@@ -18017,6 +19105,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1133522361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133522357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1136681828
 GameObject:
   m_ObjectHideFlags: 0
@@ -18139,6 +19306,7 @@ GameObject:
   - component: {fileID: 1155899018}
   - component: {fileID: 1155899020}
   - component: {fileID: 1155899019}
+  - component: {fileID: 1155899021}
   m_Layer: 0
   m_Name: Terrain_0_3_c1f08ef2-c483-4a92-a764-0a29ae923984
   m_TagString: Untagged
@@ -18204,6 +19372,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1155899021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155899017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1160103829
 GameObject:
   m_ObjectHideFlags: 0
@@ -18859,6 +20106,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1172704825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1172704826}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1172704826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172704825}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00024366379, y: 1.1550049, z: -0.2532034}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 790446398}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1174993060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1174993061}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1174993061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174993060}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00024175644, y: 2.694983, z: -0.6306467}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 290763644}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1177993644
 GameObject:
@@ -20267,6 +21574,36 @@ Transform:
   m_Father: {fileID: 1094687581}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1241095124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241095125}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241095125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241095124}
+  m_LocalRotation: {x: 0.000013412906, y: 0.000000029801186, z: 2.6006888e-10, w: 1}
+  m_LocalPosition: {x: -7.5037117, y: 0.09304859, z: 0.80687463}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247079329
 GameObject:
   m_ObjectHideFlags: 0
@@ -20352,6 +21689,36 @@ SkinnedMeshRenderer:
     m_Center: {x: 1.1641532e-10, y: 0.0026479382, z: -0.000029192772}
     m_Extent: {x: 0.0005818035, y: 0.002518179, z: 0.0007848273}
   m_DirtyAABB: 0
+--- !u!1 &1247361928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1247361929}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1247361929
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247361928}
+  m_LocalRotation: {x: 0.0000038594003, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -8.77129, y: 0.17915319, z: 0.9204552}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1251698613
 GameObject:
   m_ObjectHideFlags: 0
@@ -20469,6 +21836,7 @@ GameObject:
   - component: {fileID: 1253246733}
   - component: {fileID: 1253246735}
   - component: {fileID: 1253246734}
+  - component: {fileID: 1253246736}
   m_Layer: 0
   m_Name: Terrain_0_4_4c47cddc-08c5-441d-8702-828d2588052e
   m_TagString: Untagged
@@ -20534,6 +21902,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1253246736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253246732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1253273430
 GameObject:
   m_ObjectHideFlags: 0
@@ -20689,36 +22136,6 @@ Transform:
   - {fileID: 239476520}
   m_Father: {fileID: 2044535631}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1273947615
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1273947616}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1273947616
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1273947615}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.0000019073486, y: 1.1550001, z: -0.2532034}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 290763644}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1274513708
 GameObject:
@@ -20921,7 +22338,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283702737}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1285184573
+--- !u!1 &1286321320
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20929,7 +22346,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1285184574}
+  - component: {fileID: 1286321321}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -20937,19 +22354,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1285184574
+--- !u!4 &1286321321
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1285184573}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.0000019073486, y: 1.9249996, z: -0.44167995}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1286321320}
+  m_LocalRotation: {x: 0.0000038594003, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.77129, y: 0.17915323, z: 0.9204533}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 790446398}
-  m_RootOrder: 2
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294460795
 GameObject:
@@ -21297,36 +22714,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1317680661
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1317680662}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1317680662
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317680661}
-  m_LocalRotation: {x: -0.000001157634, y: -0.000000033702236, z: -0.029133959, w: 0.99957556}
-  m_LocalPosition: {x: 0.89995116, y: -0.052507073, z: 0.22416656}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320900723
 GameObject:
   m_ObjectHideFlags: 0
@@ -21386,6 +22773,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1160103832}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1343802943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343802944}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1343802944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343802943}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.00024175644, y: 1.9250244, z: -0.441926}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 290763644}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1353381196
 GameObject:
@@ -21588,36 +23005,6 @@ Transform:
   m_Father: {fileID: 1160103832}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1370459843
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1370459844}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1370459844
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370459843}
-  m_LocalRotation: {x: -0.0000067783635, y: 0.00009953003, z: -0.067946315, w: 0.997689}
-  m_LocalPosition: {x: 2.3749511, y: -0.32499993, z: 0.47090816}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1715041057}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1372414016
 GameObject:
   m_ObjectHideFlags: 0
@@ -21629,6 +23016,7 @@ GameObject:
   - component: {fileID: 1372414017}
   - component: {fileID: 1372414019}
   - component: {fileID: 1372414018}
+  - component: {fileID: 1372414020}
   m_Layer: 0
   m_Name: Terrain_4_1_d6337375-6d26-4431-9980-e8162a14919f
   m_TagString: Untagged
@@ -21694,6 +23082,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1372414020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372414016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1379595534
 GameObject:
   m_ObjectHideFlags: 0
@@ -22020,36 +23487,6 @@ Transform:
   m_Father: {fileID: 427516173}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1405479483
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1405479484}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1405479484
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1405479483}
-  m_LocalRotation: {x: 0.00000012013466, y: 0.00000012013466, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.0000019073486, y: 0.38500014, z: -0.06472683}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 790446398}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1407218904
 GameObject:
   m_ObjectHideFlags: 0
@@ -22175,36 +23612,6 @@ Transform:
   m_Father: {fileID: 2072617458}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1415604050
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1415604051}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1415604051
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415604050}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.0000019073486, y: 2.6950002, z: -0.6301565}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 790446398}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1415740755
 GameObject:
   m_ObjectHideFlags: 0
@@ -22294,36 +23701,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 55
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1435963854
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1435963855}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1435963855
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435963854}
-  m_LocalRotation: {x: 0.0000071674585, y: 0.0000002431625, z: -0.03391012, w: 0.99942493}
-  m_LocalPosition: {x: -10.038867, y: 0.26525253, z: 1.0335463}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444458830
 GameObject:
@@ -22615,6 +23992,7 @@ GameObject:
   - component: {fileID: 1465837581}
   - component: {fileID: 1465837583}
   - component: {fileID: 1465837582}
+  - component: {fileID: 1465837584}
   m_Layer: 0
   m_Name: Terrain_2_1_ae56087d-5dfa-4fdd-ab58-5aaa5406744a
   m_TagString: Untagged
@@ -22680,6 +24058,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1465837584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465837580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1472664071
 GameObject:
   m_ObjectHideFlags: 0
@@ -23295,17 +24752,17 @@ Transform:
   m_LocalPosition: {x: -0.8, y: 0.237, z: -1.3080566}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2140025446}
-  - {fileID: 2006021893}
-  - {fileID: 573603623}
-  - {fileID: 1085721846}
-  - {fileID: 210737690}
-  - {fileID: 694068861}
-  - {fileID: 1736338584}
-  - {fileID: 844141348}
-  - {fileID: 1730675183}
-  - {fileID: 1435963855}
-  - {fileID: 323257329}
+  - {fileID: 1523551481}
+  - {fileID: 18257775}
+  - {fileID: 1723325118}
+  - {fileID: 640045052}
+  - {fileID: 863243714}
+  - {fileID: 122936503}
+  - {fileID: 1630712854}
+  - {fileID: 1241095125}
+  - {fileID: 1247361929}
+  - {fileID: 793184710}
+  - {fileID: 1019106197}
   m_Father: {fileID: 270644452}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -1, y: 0, z: 0}
@@ -23533,7 +24990,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -3.8600001}
       TrailTip: {x: -0.6, y: -0.035, z: -3.1550002}
       CSChordFraction: 0
-      T: {fileID: 2140025446}
+      T: {fileID: 1523551481}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -23706,7 +25163,7 @@ MonoBehaviour:
       TrailRoot: {x: -0.6, y: -0.035, z: -3.1550002}
       TrailTip: {x: -1.2, y: -0.07, z: -2.4500003}
       CSChordFraction: 0
-      T: {fileID: 2006021893}
+      T: {fileID: 18257775}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -23909,7 +25366,7 @@ MonoBehaviour:
       TrailRoot: {x: -1.2, y: -0.07, z: -2.4500003}
       TrailTip: {x: -2.25, y: -0.13125, z: -1.9200002}
       CSChordFraction: 0
-      T: {fileID: 573603623}
+      T: {fileID: 1723325118}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -24082,7 +25539,7 @@ MonoBehaviour:
       TrailRoot: {x: -2.25, y: -0.13125, z: -1.9200002}
       TrailTip: {x: -3.3, y: -0.19249998, z: -1.3900001}
       CSChordFraction: 0
-      T: {fileID: 1085721846}
+      T: {fileID: 640045052}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -24285,7 +25742,7 @@ MonoBehaviour:
       TrailRoot: {x: -3.3, y: -0.19249998, z: -1.3900001}
       TrailTip: {x: -4.49, y: -0.11166665, z: -1.1766667}
       CSChordFraction: 0
-      T: {fileID: 210737690}
+      T: {fileID: 863243714}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -24458,7 +25915,7 @@ MonoBehaviour:
       TrailRoot: {x: -4.49, y: -0.11166665, z: -1.1766667}
       TrailTip: {x: -5.68, y: -0.03083332, z: -0.96333337}
       CSChordFraction: 0
-      T: {fileID: 694068861}
+      T: {fileID: 122936503}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -24631,7 +26088,7 @@ MonoBehaviour:
       TrailRoot: {x: -5.68, y: -0.03083332, z: -0.96333337}
       TrailTip: {x: -6.87, y: 0.05, z: -0.75}
       CSChordFraction: 0
-      T: {fileID: 1736338584}
+      T: {fileID: 1630712854}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -24834,7 +26291,7 @@ MonoBehaviour:
       TrailRoot: {x: -6.87, y: 0.05, z: -0.75}
       TrailTip: {x: -8.1375, y: 0.13609767, z: -0.5227731}
       CSChordFraction: 0.39
-      T: {fileID: 844141348}
+      T: {fileID: 1241095125}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25007,7 +26464,7 @@ MonoBehaviour:
       TrailRoot: {x: -8.1375, y: 0.13609767, z: -0.5227731}
       TrailTip: {x: -9.405, y: 0.22219536, z: -0.29554617}
       CSChordFraction: 0.39
-      T: {fileID: 1730675183}
+      T: {fileID: 1247361929}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25180,7 +26637,7 @@ MonoBehaviour:
       TrailRoot: {x: -9.405, y: 0.22219536, z: -0.29554617}
       TrailTip: {x: -10.6725, y: 0.308293, z: -0.06831926}
       CSChordFraction: 0.39
-      T: {fileID: 1435963855}
+      T: {fileID: 793184710}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25353,7 +26810,7 @@ MonoBehaviour:
       TrailRoot: {x: -10.6725, y: 0.308293, z: -0.06831926}
       TrailTip: {x: -11.94, y: 0.3943907, z: 0.15890765}
       CSChordFraction: 0.39
-      T: {fileID: 323257329}
+      T: {fileID: 1019106197}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25604,6 +27061,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521082372}
   m_Mesh: {fileID: 3002153450142441180, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
+--- !u!1 &1521780404
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1521780405}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1521780405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521780404}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00024366379, y: 2.694983, z: -0.6306448}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 790446398}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1523551480
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1523551481}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1523551481
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523551480}
+  m_LocalRotation: {x: 0.0000017508862, y: -0.000121815494, z: -0.000009240382, w: 1}
+  m_LocalPosition: {x: -0.2996096, y: -0.017478034, z: 0.50118726}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1532111462
 GameObject:
   m_ObjectHideFlags: 0
@@ -26184,36 +27701,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555782716}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1557260659
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1557260660}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1557260660
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557260659}
-  m_LocalRotation: {x: -0.0000035809353, y: 0.00000012150849, z: 0.033910144, w: 0.99942493}
-  m_LocalPosition: {x: 7.5037107, y: 0.09304765, z: 0.8068737}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1557767808
 GameObject:
   m_ObjectHideFlags: 0
@@ -26401,6 +27888,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1569089203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1569089204}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1569089204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1569089203}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.4249992, y: -0.19501221, z: 0.054403305}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1715041057}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576558371
 GameObject:
@@ -27019,6 +28536,7 @@ GameObject:
   - component: {fileID: 1627081493}
   - component: {fileID: 1627081495}
   - component: {fileID: 1627081494}
+  - component: {fileID: 1627081496}
   m_Layer: 0
   m_Name: Terrain_0_0_d98309ed-2c19-40a4-830d-cd7d3b59fba0
   m_TagString: Untagged
@@ -27084,6 +28602,115 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1627081496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627081492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
+--- !u!1 &1630712853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630712854}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1630712854
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630712853}
+  m_LocalRotation: {x: 0.0000024177132, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.275196, y: 0.009569469, z: 0.6967584}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1632729289
 GameObject:
   m_ObjectHideFlags: 0
@@ -27511,6 +29138,36 @@ MonoBehaviour:
   ControlInput: 0
   speed: 0.2
   invert: 0
+--- !u!1 &1664268944
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1664268945}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1664268945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664268944}
+  m_LocalRotation: {x: 0.000013412906, y: 0.000000029801186, z: 2.6006888e-10, w: 1}
+  m_LocalPosition: {x: 7.5037117, y: 0.09304862, z: 0.8068727}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667640356
 GameObject:
   m_ObjectHideFlags: 0
@@ -27637,6 +29294,7 @@ GameObject:
   - component: {fileID: 1697119692}
   - component: {fileID: 1697119694}
   - component: {fileID: 1697119693}
+  - component: {fileID: 1697119695}
   m_Layer: 0
   m_Name: Terrain_1_0_7ccccb40-17c9-4ecd-a052-8d94ace4d460
   m_TagString: Untagged
@@ -27702,6 +29360,115 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1697119695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697119691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
+--- !u!1 &1701913654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701913655}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1701913655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701913654}
+  m_LocalRotation: {x: 0.000011667607, y: 0.0002941493, z: 0.000025143097, w: 1}
+  m_LocalPosition: {x: 5.084766, y: -0.07122312, z: 0.5901061}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703941044
 GameObject:
   m_ObjectHideFlags: 0
@@ -27920,6 +29687,7 @@ GameObject:
   - component: {fileID: 1713586377}
   - component: {fileID: 1713586379}
   - component: {fileID: 1713586378}
+  - component: {fileID: 1713586380}
   m_Layer: 0
   m_Name: Terrain_2_3_12846214-b5e5-4266-90d0-fb31990ed04e
   m_TagString: Untagged
@@ -27985,6 +29753,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1713586380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713586376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1715041056
 GameObject:
   m_ObjectHideFlags: 0
@@ -28014,10 +29861,10 @@ Transform:
   m_LocalPosition: {x: 0.2, y: 0.62, z: -9.548057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 276179335}
-  - {fileID: 102204721}
-  - {fileID: 1370459844}
-  - {fileID: 885990190}
+  - {fileID: 217064364}
+  - {fileID: 1569089204}
+  - {fileID: 715668413}
+  - {fileID: 538888883}
   m_Father: {fileID: 270644452}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28209,7 +30056,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -2.16}
       TrailTip: {x: 0.95, y: -0.13, z: -1.5975001}
       CSChordFraction: 0.44
-      T: {fileID: 276179335}
+      T: {fileID: 217064364}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -28346,7 +30193,7 @@ MonoBehaviour:
       TrailRoot: {x: 0.95, y: -0.13, z: -1.5975001}
       TrailTip: {x: 1.9, y: -0.26, z: -1.0350001}
       CSChordFraction: 0.44
-      T: {fileID: 102204721}
+      T: {fileID: 1569089204}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -28483,7 +30330,7 @@ MonoBehaviour:
       TrailRoot: {x: 1.9, y: -0.26, z: -1.0350001}
       TrailTip: {x: 2.85, y: -0.39, z: -0.4725001}
       CSChordFraction: 0.44
-      T: {fileID: 1370459844}
+      T: {fileID: 715668413}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -28620,7 +30467,7 @@ MonoBehaviour:
       TrailRoot: {x: 2.85, y: -0.39, z: -0.4725001}
       TrailTip: {x: 3.8, y: -0.52, z: 0.089999914}
       CSChordFraction: 0.44
-      T: {fileID: 885990190}
+      T: {fileID: 538888883}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -29154,7 +31001,7 @@ Transform:
   m_Father: {fileID: 959300696}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1730675182
+--- !u!1 &1723325117
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -29162,7 +31009,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1730675183}
+  - component: {fileID: 1723325118}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -29170,49 +31017,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1730675183
+--- !u!4 &1723325118
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1730675182}
-  m_LocalRotation: {x: -0.0000018654391, y: -0.00000006330083, z: -0.03391014, w: 0.99942493}
-  m_LocalPosition: {x: -8.771289, y: 0.1791418, z: 0.9206982}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1723325117}
+  m_LocalRotation: {x: 0.000009846873, y: 0.00020729487, z: 0.000015719317, w: 1}
+  m_LocalPosition: {x: -1.7253911, y: -0.100600906, z: 0.17131744}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
   m_Father: {fileID: 1515198111}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1736338583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1736338584}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1736338584
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736338583}
-  m_LocalRotation: {x: -0.000002023764, y: -0.000000068655936, z: -0.033910137, w: 0.99942493}
-  m_LocalPosition: {x: -6.274951, y: 0.00957762, z: 0.69700176}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1737440264
 GameObject:
@@ -30244,17 +32061,17 @@ Transform:
   m_LocalPosition: {x: 0.8, y: 0.237, z: -1.3080566}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1057447191}
-  - {fileID: 1317680662}
-  - {fileID: 2032946065}
-  - {fileID: 10737012}
-  - {fileID: 475203387}
-  - {fileID: 773591477}
-  - {fileID: 716562373}
-  - {fileID: 1557260660}
-  - {fileID: 1868289865}
-  - {fileID: 632746180}
-  - {fileID: 2079650748}
+  - {fileID: 254594331}
+  - {fileID: 621030281}
+  - {fileID: 788567941}
+  - {fileID: 2077379090}
+  - {fileID: 197443901}
+  - {fileID: 1701913655}
+  - {fileID: 129695932}
+  - {fileID: 1664268945}
+  - {fileID: 1286321321}
+  - {fileID: 2068833008}
+  - {fileID: 847878804}
   m_Father: {fileID: 270644452}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -1, y: 0, z: 0}
@@ -30482,7 +32299,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -3.8600001}
       TrailTip: {x: 0.6, y: -0.035, z: -3.1550002}
       CSChordFraction: 0
-      T: {fileID: 1057447191}
+      T: {fileID: 254594331}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -30655,7 +32472,7 @@ MonoBehaviour:
       TrailRoot: {x: 0.6, y: -0.035, z: -3.1550002}
       TrailTip: {x: 1.2, y: -0.07, z: -2.4500003}
       CSChordFraction: 0
-      T: {fileID: 1317680662}
+      T: {fileID: 621030281}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -30858,7 +32675,7 @@ MonoBehaviour:
       TrailRoot: {x: 1.2, y: -0.07, z: -2.4500003}
       TrailTip: {x: 2.25, y: -0.13125, z: -1.9200002}
       CSChordFraction: 0
-      T: {fileID: 2032946065}
+      T: {fileID: 788567941}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -31031,7 +32848,7 @@ MonoBehaviour:
       TrailRoot: {x: 2.25, y: -0.13125, z: -1.9200002}
       TrailTip: {x: 3.3, y: -0.19249998, z: -1.3900001}
       CSChordFraction: 0
-      T: {fileID: 10737012}
+      T: {fileID: 2077379090}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -31234,7 +33051,7 @@ MonoBehaviour:
       TrailRoot: {x: 3.3, y: -0.19249998, z: -1.3900001}
       TrailTip: {x: 4.49, y: -0.11166665, z: -1.1766667}
       CSChordFraction: 0
-      T: {fileID: 475203387}
+      T: {fileID: 197443901}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -31407,7 +33224,7 @@ MonoBehaviour:
       TrailRoot: {x: 4.49, y: -0.11166665, z: -1.1766667}
       TrailTip: {x: 5.68, y: -0.03083332, z: -0.96333337}
       CSChordFraction: 0
-      T: {fileID: 773591477}
+      T: {fileID: 1701913655}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -31580,7 +33397,7 @@ MonoBehaviour:
       TrailRoot: {x: 5.68, y: -0.03083332, z: -0.96333337}
       TrailTip: {x: 6.87, y: 0.05, z: -0.75}
       CSChordFraction: 0
-      T: {fileID: 716562373}
+      T: {fileID: 129695932}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -31783,7 +33600,7 @@ MonoBehaviour:
       TrailRoot: {x: 6.87, y: 0.05, z: -0.75}
       TrailTip: {x: 8.1375, y: 0.13609767, z: -0.5227731}
       CSChordFraction: 0.39
-      T: {fileID: 1557260660}
+      T: {fileID: 1664268945}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -31956,7 +33773,7 @@ MonoBehaviour:
       TrailRoot: {x: 8.1375, y: 0.13609767, z: -0.5227731}
       TrailTip: {x: 9.405, y: 0.22219536, z: -0.29554617}
       CSChordFraction: 0.39
-      T: {fileID: 1868289865}
+      T: {fileID: 1286321321}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -32129,7 +33946,7 @@ MonoBehaviour:
       TrailRoot: {x: 9.405, y: 0.22219536, z: -0.29554617}
       TrailTip: {x: 10.6725, y: 0.308293, z: -0.06831926}
       CSChordFraction: 0.39
-      T: {fileID: 632746180}
+      T: {fileID: 2068833008}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -32302,7 +34119,7 @@ MonoBehaviour:
       TrailRoot: {x: 10.6725, y: 0.308293, z: -0.06831926}
       TrailTip: {x: 11.94, y: 0.3943907, z: 0.15890765}
       CSChordFraction: 0.39
-      T: {fileID: 2079650748}
+      T: {fileID: 847878804}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -33059,36 +34876,6 @@ MonoBehaviour:
   TipPosition: {x: 0, y: 0, z: 0}
   RootPosition: {x: 0, y: 0, z: 0}
   ParentWing: {fileID: 0}
---- !u!1 &1833781396
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1833781397}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1833781397
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1833781396}
-  m_LocalRotation: {x: 0.000005465438, y: 0.00008025169, z: 0.06794632, w: 0.997689}
-  m_LocalPosition: {x: -0.47504884, y: -0.06500018, z: -0.36209965}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1875415297}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1839465395
 GameObject:
   m_ObjectHideFlags: 0
@@ -33369,36 +35156,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866737571}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1868289864
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1868289865}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1868289865
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1868289864}
-  m_LocalRotation: {x: -0.0000018654391, y: 0.00000006330083, z: 0.03391014, w: 0.99942493}
-  m_LocalPosition: {x: 8.771289, y: 0.1791418, z: 0.9206982}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1868512480
 GameObject:
   m_ObjectHideFlags: 0
@@ -33558,10 +35315,10 @@ Transform:
   m_LocalPosition: {x: -0.2, y: 0.62, z: -9.548057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1833781397}
-  - {fileID: 362633337}
-  - {fileID: 249621770}
-  - {fileID: 22854601}
+  - {fileID: 559029457}
+  - {fileID: 673996342}
+  - {fileID: 751014626}
+  - {fileID: 844622072}
   m_Father: {fileID: 270644452}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33737,7 +35494,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -2.16}
       TrailTip: {x: -0.95, y: -0.13, z: -1.5975001}
       CSChordFraction: 0.44
-      T: {fileID: 1833781397}
+      T: {fileID: 559029457}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -33874,7 +35631,7 @@ MonoBehaviour:
       TrailRoot: {x: -0.95, y: -0.13, z: -1.5975001}
       TrailTip: {x: -1.9, y: -0.26, z: -1.0350001}
       CSChordFraction: 0.44
-      T: {fileID: 362633337}
+      T: {fileID: 673996342}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -34011,7 +35768,7 @@ MonoBehaviour:
       TrailRoot: {x: -1.9, y: -0.26, z: -1.0350001}
       TrailTip: {x: -2.85, y: -0.39, z: -0.4725001}
       CSChordFraction: 0.44
-      T: {fileID: 249621770}
+      T: {fileID: 751014626}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -34148,7 +35905,7 @@ MonoBehaviour:
       TrailRoot: {x: -2.85, y: -0.39, z: -0.4725001}
       TrailTip: {x: -3.8, y: -0.52, z: 0.089999914}
       CSChordFraction: 0.44
-      T: {fileID: 22854601}
+      T: {fileID: 844622072}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -35429,6 +37186,7 @@ GameObject:
   - component: {fileID: 1946418429}
   - component: {fileID: 1946418431}
   - component: {fileID: 1946418430}
+  - component: {fileID: 1946418432}
   m_Layer: 0
   m_Name: Terrain_2_4_756512bb-d9d6-4586-99d1-e9b8d09c4f21
   m_TagString: Untagged
@@ -35494,6 +37252,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1946418432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1946418428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1947918682
 GameObject:
   m_ObjectHideFlags: 0
@@ -35690,6 +37527,7 @@ GameObject:
   - component: {fileID: 1987646424}
   - component: {fileID: 1987646426}
   - component: {fileID: 1987646425}
+  - component: {fileID: 1987646427}
   m_Layer: 0
   m_Name: Terrain_1_4_d112b2ca-d8b6-4c67-b807-21048782c53f
   m_TagString: Untagged
@@ -35755,6 +37593,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &1987646427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987646423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &1994711480
 GameObject:
   m_ObjectHideFlags: 0
@@ -35836,6 +37753,101 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1994711480}
   m_Mesh: {fileID: -7121844490072731769, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
+--- !u!1 &1996023150
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1996023154}
+  - component: {fileID: 1996023153}
+  - component: {fileID: 1996023152}
+  - component: {fileID: 1996023151}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1996023151
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996023150}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1996023152
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996023150}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4845c96e9f0c68349a256142e3f30ce9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1996023153
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996023150}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1996023154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996023150}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2174, y: 550, z: -11634}
+  m_LocalScale: {x: 1500, y: 35, z: 89.59}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2004914857
 GameObject:
   m_ObjectHideFlags: 0
@@ -35865,36 +37877,6 @@ Transform:
   m_Children:
   - {fileID: 1462154789}
   m_Father: {fileID: 890568877}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2006021892
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2006021893}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2006021893
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006021892}
-  m_LocalRotation: {x: -0.000001157634, y: 0.000000033702236, z: 0.029133959, w: 0.99957556}
-  m_LocalPosition: {x: -0.89995116, y: -0.052507073, z: 0.22416656}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010029302
@@ -36119,36 +38101,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 44
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2032946064
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2032946065}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2032946065
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2032946064}
-  m_LocalRotation: {x: -0.0000015776604, y: -0.00000004595495, z: -0.029133959, w: 0.99957556}
-  m_LocalPosition: {x: 1.7249024, y: -0.10063043, z: 0.17156087}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034955472
 GameObject:
@@ -36585,6 +38537,7 @@ GameObject:
   - component: {fileID: 2036902989}
   - component: {fileID: 2036902991}
   - component: {fileID: 2036902990}
+  - component: {fileID: 2036902992}
   m_Layer: 0
   m_Name: Terrain_2_2_0b7c1691-48b3-4288-83d6-d49683b1ab73
   m_TagString: Untagged
@@ -36650,6 +38603,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &2036902992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036902988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &2044535630
 GameObject:
   m_ObjectHideFlags: 0
@@ -36726,6 +38758,7 @@ GameObject:
   - component: {fileID: 2051625870}
   - component: {fileID: 2051625872}
   - component: {fileID: 2051625871}
+  - component: {fileID: 2051625873}
   m_Layer: 0
   m_Name: Terrain_3_1_af570a4b-4c1d-466e-aaa3-ea5a4be9b720
   m_TagString: Untagged
@@ -36791,6 +38824,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &2051625873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051625869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &2052710258
 GameObject:
   m_ObjectHideFlags: 0
@@ -37423,6 +39535,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059789766}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2068833007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2068833008}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2068833008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068833007}
+  m_LocalRotation: {x: -0.0000074757254, y: 0.00000005960237, z: 5.2013777e-10, w: 1}
+  m_LocalPosition: {x: 10.038868, y: 0.26525784, z: 1.0340339}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2069140811
 GameObject:
   m_ObjectHideFlags: 0
@@ -38094,7 +40236,7 @@ MonoBehaviour:
   Input: 0
   Name: 
   Invert: 0
---- !u!1 &2079650747
+--- !u!1 &2077379089
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38102,7 +40244,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2079650748}
+  - component: {fileID: 2077379090}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -38110,19 +40252,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2079650748
+--- !u!4 &2077379090
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2079650747}
-  m_LocalRotation: {x: 0.0000028368086, y: -0.00000009621726, z: 0.03391014, w: 0.99942493}
-  m_LocalPosition: {x: 11.306201, y: 0.35134667, z: 1.1473709}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 2077379089}
+  m_LocalRotation: {x: 0.0000072391695, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.7751958, y: -0.16184899, z: 0.34385806}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
   m_Father: {fileID: 1799648324}
-  m_RootOrder: 10
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2080711641
 GameObject:
@@ -38216,6 +40358,7 @@ GameObject:
   - component: {fileID: 2081328708}
   - component: {fileID: 2081328710}
   - component: {fileID: 2081328709}
+  - component: {fileID: 2081328711}
   m_Layer: 0
   m_Name: Terrain_1_3_d36e64ac-0d48-4dc7-8a7b-9e4e3795b088
   m_TagString: Untagged
@@ -38281,6 +40424,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &2081328711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081328707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &2081341532
 GameObject:
   m_ObjectHideFlags: 0
@@ -38681,6 +40903,7 @@ GameObject:
   - component: {fileID: 2108878742}
   - component: {fileID: 2108878744}
   - component: {fileID: 2108878743}
+  - component: {fileID: 2108878745}
   m_Layer: 0
   m_Name: Terrain_0_1_7e5d82fd-286c-4fc9-a47a-ba89da3771b7
   m_TagString: Untagged
@@ -38746,6 +40969,85 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
+--- !u!114 &2108878745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108878741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a5dfa32418526428cd9d04cc0b042c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteepnessCoefficient: 1000
+  TexturesToTile:
+  - Name: Grass
+    Texture: {fileID: 2800000, guid: 9875bf7345d4ac04ab35f3b9ed63a954, type: 3}
+    Normal: {fileID: 2800000, guid: 6711a6f408dca5b41b938ec249d8d444, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: -1
+    MaximumSteepness: 65
+    scale: 100
+    u: 0
+    v: 0
+    SteepWeight: 10
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Rock
+    Texture: {fileID: 2800000, guid: f7dd726c93b8f17418ea3be3f6768909, type: 3}
+    Normal: {fileID: 2800000, guid: f45c3bd09301cc64783afc31dfca026b, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 45
+    MaximumSteepness: 3000
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 0.2
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Gravel
+    Texture: {fileID: 2800000, guid: 3d6ea8373013b3546a620f84802e06f6, type: 3}
+    Normal: {fileID: 2800000, guid: 772b522eb070d9c4fa30ce003900a485, type: 3}
+    MinimumHeight: 0
+    MaximumHeight: 20000
+    MinimumSteepness: 30
+    MaximumSteepness: 90
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 5
+    HeightWeight: 3
+    Randomness: 0
+  - Name: Snow
+    Texture: {fileID: 2800000, guid: 0cc0777f7d4a3444380eb084d74396b5, type: 3}
+    Normal: {fileID: 2800000, guid: 52f2b70b42682a145b20ea5f04fd6af1, type: 3}
+    MinimumHeight: 2500
+    MaximumHeight: 20000
+    MinimumSteepness: 0
+    MaximumSteepness: 500
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 1
+    HeightWeight: 1
+    Randomness: 1600
+  - Name: Sand
+    Texture: {fileID: 2800000, guid: ef1fbc9bae2718d4a8dbe2baaa01399c, type: 3}
+    Normal: {fileID: 2800000, guid: f3b2a952874cda74583658ed78a08ef2, type: 3}
+    MinimumHeight: -50
+    MaximumHeight: 450
+    MinimumSteepness: -10
+    MaximumSteepness: 35
+    scale: 500
+    u: 0
+    v: 0
+    SteepWeight: 25
+    HeightWeight: 25
+    Randomness: 0
 --- !u!1 &2123486459
 GameObject:
   m_ObjectHideFlags: 0
@@ -39215,36 +41517,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 56
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2140025445
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2140025446}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2140025446
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140025445}
-  m_LocalRotation: {x: -0.00000068638474, y: 0.000000019994332, z: 0.029133959, w: 0.99957556}
-  m_LocalPosition: {x: -0.30009764, y: -0.017499011, z: 0.5011869}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2140674653
 GameObject:

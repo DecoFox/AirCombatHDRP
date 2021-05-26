@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading;
 using System;
 
+[ExecuteInEditMode]
+
 public class ProceduralTexClient : MonoBehaviour
 {
     public float SteepnessCoefficient = 1; //1 works well at 513x513 heightmap sizes. Smaller sizes will require smaller coefficients.
@@ -24,11 +26,12 @@ public class ProceduralTexClient : MonoBehaviour
     private float[,,] SplatStack; //3d float array of resultant mask values as indexed by x,y location, and layer index (z);
     private List<Action> CuedActions = new List<Action>();
 
-
+    /*
     void Start()
     {
         InitializePainter(gameObject.GetComponentInChildren<Terrain>().terrainData);
     }
+    */
 
     public void InitializePainter(TerrainData TDataIn)
     {
@@ -93,8 +96,10 @@ public class ProceduralTexClient : MonoBehaviour
             LayerList[i].name = TexturesToTile[i].Name;
             LayerList[i].diffuseTexture = TexturesToTile[i].Texture;
             LayerList[i].normalMapTexture = TexturesToTile[i].Normal;
+            UnityEditor.AssetDatabase.CreateAsset(LayerList[i], "Assets/ProceduralTerrainTexture/Layers/" + LayerList[i].name + ".TerrainLayer");
             //LayerList[i].maskMapTexture = MaskTextures[i];
             //LayerList[i].maskMapTexture = new Texture2D(Data.heightmapResolution, Data.heightmapResolution);
+
 
             //Populate the values in the layer alias we're feeding to the thread so they match the originating TileTexture object
             LayerAlias LA = new LayerAlias();
@@ -104,6 +109,7 @@ public class ProceduralTexClient : MonoBehaviour
             LA.MinimumSteepness = TexturesToTile[i].MinimumSteepness;
             LA.HeightWeight = TexturesToTile[i].HeightWeight;
             LA.SteepWeight = TexturesToTile[i].SteepWeight;
+            LA.Randomness = TexturesToTile[i].Randomness;
             Aliases[i] = LA;
         }
         Dat.terrainLayers = LayerList;
@@ -128,12 +134,12 @@ public class ProceduralTexClient : MonoBehaviour
                 float xnorm3 = ((float)x - 1) / (float)AlphaResolution;
 
                 //Find the height value at this coordinate, and at the adjacent coordinates on X and Y (for measuring slope).
-                float height = MeasuredHeights[Mathf.RoundToInt(ynorm * AlphaResolution), Mathf.RoundToInt(xnorm * AlphaResolution)] * 1000;
-                float height2 = MeasuredHeights[Mathf.RoundToInt(ynorm * AlphaResolution), Mathf.Clamp(Mathf.RoundToInt(xnorm2 * AlphaResolution), 0, AlphaResolution - 1)] * 1000;
-                float height3 = MeasuredHeights[Mathf.Clamp(Mathf.RoundToInt(ynorm2 * AlphaResolution), 0, AlphaResolution - 1), Mathf.RoundToInt(xnorm * AlphaResolution)] * 1000; ;
+                float height = MeasuredHeights[Mathf.RoundToInt(ynorm * AlphaResolution), Mathf.RoundToInt(xnorm * AlphaResolution)] * 1;
+                float height2 = MeasuredHeights[Mathf.RoundToInt(ynorm * AlphaResolution), Mathf.Clamp(Mathf.RoundToInt(xnorm2 * AlphaResolution), 0, AlphaResolution - 1)] * 1;
+                float height3 = MeasuredHeights[Mathf.Clamp(Mathf.RoundToInt(ynorm2 * AlphaResolution), 0, AlphaResolution - 1), Mathf.RoundToInt(xnorm * AlphaResolution)] * 1; 
 
-                float height4 = MeasuredHeights[Mathf.RoundToInt(ynorm * AlphaResolution), Mathf.Clamp(Mathf.RoundToInt(xnorm3 * AlphaResolution), 0, AlphaResolution - 1)] * 1000;
-                float height5 = MeasuredHeights[Mathf.Clamp(Mathf.RoundToInt(ynorm3 * AlphaResolution), 0, AlphaResolution - 1), Mathf.RoundToInt(xnorm * AlphaResolution)] * 1000; ;
+                float height4 = MeasuredHeights[Mathf.RoundToInt(ynorm * AlphaResolution), Mathf.Clamp(Mathf.RoundToInt(xnorm3 * AlphaResolution), 0, AlphaResolution - 1)] * 1;
+                float height5 = MeasuredHeights[Mathf.Clamp(Mathf.RoundToInt(ynorm3 * AlphaResolution), 0, AlphaResolution - 1), Mathf.RoundToInt(xnorm * AlphaResolution)] * 1; 
 
                 //print(height);
                 //How different is our main sample from its adjacent values?
@@ -163,14 +169,17 @@ public class ProceduralTexClient : MonoBehaviour
 
                     float SteepMinStrength = (steep - A.MinimumSteepness) / 65;
                     float SteepMaxStrength = (A.MaximumSteepness - steep) / 65;
-                    float SteepStrength = Mathf.Clamp((SteepMaxStrength * SteepMinStrength), 0.001f, 1) * A.SteepWeight;
+                    float SteepStrength = Mathf.Clamp((SteepMaxStrength * SteepMinStrength), 0.00f, 1) * A.SteepWeight;
                     //print(SteepStrength);
 
+                    //print(A.Randomness);
+                    float heightB = height + ((-0.5f + Mathf.PerlinNoise((float)x / 2, (float)y / 2)) * A.Randomness);
 
-                    float HeightMinStrength = (height - A.MinimumHeight) / 100;
-                    float HeightMaxStrength = (A.MaximumHeight - height) / 100;
-                    float HeightStrength = Mathf.Clamp((HeightMaxStrength * HeightMinStrength) , 0.001f, 1) * A.HeightWeight;
+                    float HeightMinStrength = (heightB - A.MinimumHeight) / 20000;
+                    float HeightMaxStrength = (A.MaximumHeight - heightB) / 20000;
+                    float HeightStrength = Mathf.Clamp((HeightMaxStrength * HeightMinStrength) , 0.00f, 1) * A.HeightWeight;
                     //float HeightStrength = 0;
+                    //print(height);
 
                     //SplatStack[x, y, index] = SteepStrength + HeightStrength;
 
@@ -200,6 +209,7 @@ public class ProceduralTexClient : MonoBehaviour
         Action CueTerrainPaint = () =>
         {
             Data.SetAlphamaps(0, 0, SplatStack);
+            //gameObject.GetComponent<Terrain>().Flush();
         };
         CuedActions.Add(CueTerrainPaint);
 
