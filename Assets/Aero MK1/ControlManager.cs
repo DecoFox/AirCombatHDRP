@@ -14,7 +14,8 @@ public class ControlManager : MonoBehaviour
     private float PitchEntry;
     private float RollEntry;
 
-    public float Speed;
+    public float SpeedAileron;
+    public float SpeedElevator;
     public float ElevGain;
     public float AilGain;
     // Start is called before the first frame update
@@ -34,8 +35,8 @@ public class ControlManager : MonoBehaviour
         float RequestedPitch = (wd - sd) * ElevGain;
         float RequestedRoll = (ad - dd) * AilGain;
 
-        PitchEntry = Mathf.Lerp(PitchEntry, RequestedPitch + (PitchTrim / 10), Speed);
-        RollEntry = Mathf.Lerp(RollEntry, RequestedRoll, Speed);
+        PitchEntry = Mathf.Lerp(PitchEntry, RequestedPitch + (PitchTrim / 10), SpeedElevator);
+        RollEntry = Mathf.Lerp(RollEntry, RequestedRoll, SpeedAileron);
 
         foreach(ControlGovernor G in Elevators)
         {

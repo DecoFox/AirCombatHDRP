@@ -365,7 +365,7 @@ public class AirfoilMk2 : MonoBehaviour
                             Element E = new Element(LocalLP, LocalNL, LocalTP, LocalNT, S.ControlSurfaceChord, OT, CLc, CDc, NormalInvert);
                             E.T.position = transform.TransformPoint(E.Center);
                             E.T.parent = transform;
-                            E.T.LookAt((LeadPoint + NextLead) / 2, Vector3.Cross(E.SparVec, (E.LeadRoot - E.TrailRoot) * NormalInvert));
+                            E.T.LookAt((LeadPoint + NextLead) / 2, transform.TransformDirection(Vector3.Cross(E.SparVec, (E.LeadRoot - E.TrailRoot) * NormalInvert)));
                             E.Falloff = Vector3.Magnitude(E.Center) / Span;
                             
 

@@ -96,7 +96,7 @@ public class ProceduralTexClient : MonoBehaviour
             LayerList[i].name = TexturesToTile[i].Name;
             LayerList[i].diffuseTexture = TexturesToTile[i].Texture;
             LayerList[i].normalMapTexture = TexturesToTile[i].Normal;
-            UnityEditor.AssetDatabase.CreateAsset(LayerList[i], "Assets/ProceduralTerrainTexture/Layers/" + LayerList[i].name + ".TerrainLayer");
+            //UnityEditor.AssetDatabase.CreateAsset(LayerList[i], "Assets/ProceduralTerrainTexture/Layers/" + LayerList[i].name + ".TerrainLayer");
             //LayerList[i].maskMapTexture = MaskTextures[i];
             //LayerList[i].maskMapTexture = new Texture2D(Data.heightmapResolution, Data.heightmapResolution);
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2035111234}
-  m_IndirectSpecularColor: {r: 168.44046, g: 204.24692, b: 268.08832, a: 1}
+  m_IndirectSpecularColor: {r: 168.31674, g: 204.11978, b: 267.9311, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -259,36 +259,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1160103832}
   m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &18257774
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 18257775}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &18257775
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18257774}
-  m_LocalRotation: {x: 0.0000034812829, y: 0.000000029801182, z: 2.6006886e-10, w: 1}
-  m_LocalPosition: {x: -0.90019566, y: -0.052496172, z: 0.22367863}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &19311538
 GameObject:
@@ -527,6 +497,36 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2034955475}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &56519825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56519826}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56519826
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56519825}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: 0.06794634, w: 0.997689}
+  m_LocalPosition: {x: -1.4250011, y: -0.19501221, z: 0.054403305}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1875415297}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &60352066
@@ -779,6 +779,89 @@ Transform:
   m_Father: {fileID: 1032323197}
   m_RootOrder: 57
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &76751619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 76751620}
+  - component: {fileID: 76751621}
+  m_Layer: 0
+  m_Name: Engine
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &76751620
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76751619}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.0810547, y: 0.1038208, z: 2.1650398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 270644452}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &76751621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76751619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998139a69d25a654384dd11c0c7d3505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PropDiameter: 3.353
+  PropRPM: 3000
+  PropEfficiency:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.02
+      inSlope: 5.6538486
+      outSlope: 5.6538486
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.16012755
+    - serializedVersion: 3
+      time: 0.02731062
+      value: 0.14725728
+      inSlope: 4.1580853
+      outSlope: 4.1580853
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.48541117
+      outWeight: 0.02104641
+    - serializedVersion: 3
+      time: 1
+      value: 0.40177003
+      inSlope: -1.7466501
+      outSlope: -1.7466501
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.032541055
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  AdvanceRatio: 0
+  KWPower: 2400
+  CurrentVelocity: 0
+  Knots: 0
+  Thrust: 0
 --- !u!1 &77594608
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,36 +1613,6 @@ Transform:
   m_Father: {fileID: 1032323197}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &122936502
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 122936503}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &122936503
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 122936502}
-  m_LocalRotation: {x: 0.0000116555, y: -0.00029422995, z: 0.000014831478, w: 1}
-  m_LocalPosition: {x: -5.084766, y: -0.07122313, z: 0.5901071}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &124755153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,36 +1642,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1160103832}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &129695931
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 129695932}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &129695932
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 129695931}
-  m_LocalRotation: {x: 0.0000024177132, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.275196, y: 0.0095695015, z: 0.6967565}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &130726756
 GameObject:
@@ -1679,6 +1702,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &155264945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155264946}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &155264946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155264945}
+  m_LocalRotation: {x: 0.000013407318, y: 0.00000047017232, z: -0.033905, w: 0.99942505}
+  m_LocalPosition: {x: -7.5037117, y: 0.09304859, z: 0.80687463}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163520500
 GameObject:
@@ -2426,36 +2479,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &197443900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 197443901}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &197443901
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 197443900}
-  m_LocalRotation: {x: 0.000002518296, y: -0.0002764295, z: -0.000023627279, w: 1}
-  m_LocalPosition: {x: 3.895313, y: -0.15207675, z: 0.48345417}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &197575757
 GameObject:
   m_ObjectHideFlags: 0
@@ -2597,36 +2620,6 @@ Transform:
   m_Father: {fileID: 1032323197}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &217064363
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 217064364}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &217064364
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 217064363}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4748038, y: -0.06500733, z: -0.36185646}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1715041057}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &222428371
 GameObject:
   m_ObjectHideFlags: 0
@@ -2686,6 +2679,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1715462870}
   m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &233582214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233582215}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233582215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233582214}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.00024175644, y: 1.1550049, z: -0.2532053}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 290763644}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &238357500
 GameObject:
@@ -3341,7 +3364,7 @@ MonoBehaviour:
   Input: 0
   Name: AileronLeft
   Invert: 0
---- !u!1 &254594330
+--- !u!1 &258291406
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3349,7 +3372,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 254594331}
+  - component: {fileID: 258291407}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -3357,19 +3380,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &254594331
+--- !u!4 &258291407
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254594330}
-  m_LocalRotation: {x: 0.0000017490236, y: 0.00012185013, z: -0.000004974167, w: 1}
-  m_LocalPosition: {x: 0.29960936, y: -0.01747803, z: 0.501187}
+  m_GameObject: {fileID: 258291406}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.00024366379, y: 2.694983, z: -0.6306448}
   m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 0
+  m_Father: {fileID: 790446398}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &263346793
 GameObject:
@@ -3875,7 +3898,8 @@ MonoBehaviour:
   AileronLinks:
   - {fileID: 1515198112}
   - {fileID: 1799648325}
-  Speed: 0.05
+  SpeedAileron: 0.05
+  SpeedElevator: 0.02
   ElevGain: 0.7
   AilGain: 0.5
 --- !u!114 &270644449
@@ -3885,12 +3909,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270644444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e56ccd333a41b8429f03805126c9f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mult: 25000
+  Mult: 15000
   Force: {x: 0, y: 0, z: 0}
 --- !u!54 &270644451
 Rigidbody:
@@ -3901,7 +3925,7 @@ Rigidbody:
   m_GameObject: {fileID: 270644444}
   serializedVersion: 2
   m_Mass: 13000
-  m_Drag: 0.02
+  m_Drag: 0.002
   m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -3916,7 +3940,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270644444}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2911.8, y: 570.49, z: -11633.7}
+  m_LocalPosition: {x: 2911.8, y: 570.49, z: -11637.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 574224903}
@@ -3927,6 +3951,8 @@ Transform:
   - {fileID: 1715041057}
   - {fileID: 790446398}
   - {fileID: 290763644}
+  - {fileID: 76751620}
+  - {fileID: 2065761863}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
@@ -4521,10 +4547,10 @@ Transform:
   m_LocalPosition: {x: 4.073, y: 0.225, z: -8.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 990925922}
-  - {fileID: 590266267}
-  - {fileID: 1343802944}
-  - {fileID: 1174993061}
+  - {fileID: 1066473992}
+  - {fileID: 233582215}
+  - {fileID: 731564678}
+  - {fileID: 428376342}
   m_Father: {fileID: 270644452}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4540,7 +4566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad340251a2182a54f90fc2204126daee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vaporwave: 0
+  Vaporwave: 1
   PanelMat: {fileID: 2100000, guid: 55c7fa7c49b88f348b2adcd671a4e07a, type: 2}
   CLc:
     serializedVersion: 2
@@ -4700,7 +4726,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -1.47}
       TrailTip: {x: 0, y: 0.77, z: -1.465}
       CSChordFraction: 0
-      T: {fileID: 990925922}
+      T: {fileID: 1066473992}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -4837,7 +4863,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0.77, z: -1.465}
       TrailTip: {x: 0, y: 1.54, z: -1.46}
       CSChordFraction: 0
-      T: {fileID: 590266267}
+      T: {fileID: 233582215}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -4974,7 +5000,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 1.54, z: -1.46}
       TrailTip: {x: 0, y: 2.31, z: -1.455}
       CSChordFraction: 0
-      T: {fileID: 1343802944}
+      T: {fileID: 731564678}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -5111,7 +5137,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 2.31, z: -1.455}
       TrailTip: {x: 0, y: 3.08, z: -1.45}
       CSChordFraction: 0
-      T: {fileID: 1174993061}
+      T: {fileID: 428376342}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -5244,6 +5270,36 @@ MonoBehaviour:
       CenterChordDistance: 1.6437501
       Area: 1.2656873
   LineMaterial: {fileID: 0}
+--- !u!1 &296950520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 296950521}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &296950521
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296950520}
+  m_LocalRotation: {x: 0.0000017499549, y: 0.00000004362664, z: -0.029129531, w: 0.9995757}
+  m_LocalPosition: {x: 0.29960936, y: -0.01747803, z: 0.501187}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &300715998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5494,6 +5550,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &313882774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 313882775}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &313882775
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 313882774}
+  m_LocalRotation: {x: 0.0000065229824, y: -0.00000023175377, z: 0.033905003, w: 0.99942505}
+  m_LocalPosition: {x: 11.306447, y: 0.35136247, z: 1.1476135}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &324318768
 GameObject:
@@ -6743,6 +6829,36 @@ Transform:
   m_Father: {fileID: 2072617458}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &404687053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 404687054}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &404687054
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404687053}
+  m_LocalRotation: {x: -0.000007472, y: 0.0000003048044, z: 0.03390499, w: 0.99942505}
+  m_LocalPosition: {x: 10.038868, y: 0.26525784, z: 1.0340339}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &405500054
 GameObject:
   m_ObjectHideFlags: 0
@@ -7107,6 +7223,36 @@ Transform:
   - {fileID: 91085051}
   m_Father: {fileID: 1543752525}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &428376341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 428376342}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &428376342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428376341}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.00024175644, y: 2.694983, z: -0.6306467}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 290763644}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &435633502
 GameObject:
@@ -7586,6 +7732,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1715462870}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &476079650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 476079651}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &476079651
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476079650}
+  m_LocalRotation: {x: -0.000021874903, y: 0.0003210902, z: -0.067946315, w: 0.9976889}
+  m_LocalPosition: {x: 0.4748038, y: -0.06500733, z: -0.36185646}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1715041057}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &486536806
 GameObject:
@@ -8506,36 +8682,6 @@ Transform:
   m_Father: {fileID: 2072617458}
   m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &538888882
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 538888883}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &538888883
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 538888882}
-  m_LocalRotation: {x: -0.000000028063365, y: -0.00045290584, z: 0.00006197555, w: 0.9999999}
-  m_LocalPosition: {x: 3.32539, y: -0.45502198, z: 0.8869219}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1715041057}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &556161746
 GameObject:
   m_ObjectHideFlags: 0
@@ -8565,36 +8711,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &559029456
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 559029457}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &559029457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 559029456}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.4748057, y: -0.06500733, z: -0.36185646}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1875415297}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &560404310
 GameObject:
@@ -8943,6 +9059,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563883557}
   m_Mesh: {fileID: 4708768993975612759, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
+--- !u!1 &566740949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 566740950}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &566740950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 566740949}
+  m_LocalRotation: {x: 0.000014353542, y: -0.00024401693, z: -0.029129526, w: 0.9995757}
+  m_LocalPosition: {x: 2.7751958, y: -0.16184899, z: 0.34385806}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &571242679
 GameObject:
   m_ObjectHideFlags: 0
@@ -9496,36 +9642,6 @@ Transform:
   m_Father: {fileID: 959300696}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &590266266
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 590266267}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &590266267
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590266266}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00024175644, y: 1.1550049, z: -0.2532053}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 290763644}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &592732723
 GameObject:
   m_ObjectHideFlags: 0
@@ -9555,6 +9671,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &593103618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 593103619}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &593103619
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 593103618}
+  m_LocalRotation: {x: 0.00000983756, y: 0.0000002522429, z: -0.029129533, w: 0.99957573}
+  m_LocalPosition: {x: 1.7253907, y: -0.1006009, z: 0.17131685}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &601435802
 GameObject:
@@ -9712,6 +9858,36 @@ MonoBehaviour:
     SteepWeight: 25
     HeightWeight: 25
     Randomness: 0
+--- !u!1 &603485778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603485779}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603485779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603485778}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.00024366379, y: 1.1550049, z: -0.2532034}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 790446398}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &612012049
 GameObject:
   m_ObjectHideFlags: 0
@@ -10062,36 +10238,6 @@ MonoBehaviour:
   TipPosition: {x: -1250.16, y: 17.049, z: -2373.83}
   RootPosition: {x: -1246.36, y: 17.549, z: -2375.5}
   ParentWing: {fileID: 0}
---- !u!1 &621030280
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 621030281}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &621030281
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621030280}
-  m_LocalRotation: {x: 0.0000034812829, y: 0.000000029801182, z: 2.6006886e-10, w: 1}
-  m_LocalPosition: {x: 0.9001954, y: -0.05249616, z: 0.22367804}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &625103709
 GameObject:
   m_ObjectHideFlags: 0
@@ -10212,36 +10358,6 @@ Transform:
   m_Father: {fileID: 1032323197}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &640045051
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 640045052}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &640045052
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640045051}
-  m_LocalRotation: {x: 0.0000072391695, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7751958, y: -0.16184902, z: 0.34385902}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &646834439
 GameObject:
   m_ObjectHideFlags: 0
@@ -10347,6 +10463,36 @@ MonoBehaviour:
   TipPosition: {x: 0, y: 0, z: 0}
   RootPosition: {x: 0, y: 0, z: 0}
   ParentWing: {fileID: 0}
+--- !u!1 &659548963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 659548964}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &659548964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659548963}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.00024366379, y: 0.38498536, z: -0.06448269}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 790446398}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &665181809
 GameObject:
   m_ObjectHideFlags: 0
@@ -10749,36 +10895,6 @@ MonoBehaviour:
     SteepWeight: 25
     HeightWeight: 25
     Randomness: 0
---- !u!1 &673996341
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 673996342}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &673996342
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 673996341}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4250011, y: -0.19501221, z: 0.054403305}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1875415297}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676375802
 GameObject:
   m_ObjectHideFlags: 0
@@ -10964,6 +11080,36 @@ Transform:
   m_Father: {fileID: 1032323197}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &682783305
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 682783306}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &682783306
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682783305}
+  m_LocalRotation: {x: 0.000013406387, y: -0.00000047011412, z: 0.033904992, w: 0.99942505}
+  m_LocalPosition: {x: 7.5037117, y: 0.09304862, z: 0.8068727}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683150592
 GameObject:
   m_ObjectHideFlags: 0
@@ -11122,6 +11268,36 @@ Transform:
   m_Father: {fileID: 2072617458}
   m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &694358983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694358984}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &694358984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694358983}
+  m_LocalRotation: {x: 0.0000017480922, y: -0.0000000138534215, z: 0.029129535, w: 0.9995757}
+  m_LocalPosition: {x: -0.2996096, y: -0.017478034, z: 0.50118726}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705750979
 GameObject:
   m_ObjectHideFlags: 0
@@ -11249,7 +11425,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713179394}
   m_Mesh: {fileID: 9091128955637069934, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
---- !u!1 &715668412
+--- !u!1 &716256309
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11257,7 +11433,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 715668413}
+  - component: {fileID: 716256310}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -11265,19 +11441,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &715668413
+--- !u!4 &716256310
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 715668412}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3751945, y: -0.3250171, z: 0.47066307}
+  m_GameObject: {fileID: 716256309}
+  m_LocalRotation: {x: 0.0000034794207, y: -0.00000007339985, z: 0.02912953, w: 0.9995757}
+  m_LocalPosition: {x: -0.90019566, y: -0.052496172, z: 0.22367863}
   m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 1715041057}
-  m_RootOrder: 2
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &719260517
 GameObject:
@@ -11704,7 +11880,7 @@ MonoBehaviour:
     SteepWeight: 25
     HeightWeight: 25
     Randomness: 0
---- !u!1 &737449281
+--- !u!1 &731564677
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11712,7 +11888,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 737449282}
+  - component: {fileID: 731564678}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -11720,19 +11896,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &737449282
+--- !u!4 &731564678
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 737449281}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00024366379, y: 0.38498536, z: -0.06448269}
+  m_GameObject: {fileID: 731564677}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.00024175644, y: 1.9250244, z: -0.441926}
   m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 790446398}
-  m_RootOrder: 0
+  m_Father: {fileID: 290763644}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &742137272
 GameObject:
@@ -11830,36 +12006,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742137272}
   m_Mesh: {fileID: 8871026824040203351, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
---- !u!1 &751014625
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 751014626}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &751014626
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751014625}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.3751965, y: -0.3250171, z: 0.47066307}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1875415297}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &758492269
 GameObject:
   m_ObjectHideFlags: 0
@@ -12114,36 +12260,6 @@ Transform:
   m_Father: {fileID: 1924459851}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &788567940
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 788567941}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &788567941
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 788567940}
-  m_LocalRotation: {x: 0.000009841285, y: -0.00020726748, z: 0.000008464563, w: 1}
-  m_LocalPosition: {x: 1.7253907, y: -0.1006009, z: 0.17131685}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790446397
 GameObject:
   m_ObjectHideFlags: 0
@@ -12172,10 +12288,10 @@ Transform:
   m_LocalPosition: {x: -4.073, y: 0.225, z: -8.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 737449282}
-  - {fileID: 1172704826}
-  - {fileID: 913497172}
-  - {fileID: 1521780405}
+  - {fileID: 659548964}
+  - {fileID: 603485779}
+  - {fileID: 1804800562}
+  - {fileID: 258291407}
   m_Father: {fileID: 270644452}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12191,7 +12307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad340251a2182a54f90fc2204126daee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vaporwave: 0
+  Vaporwave: 1
   PanelMat: {fileID: 2100000, guid: 55c7fa7c49b88f348b2adcd671a4e07a, type: 2}
   CLc:
     serializedVersion: 2
@@ -12351,7 +12467,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -1.47}
       TrailTip: {x: 0, y: 0.77, z: -1.465}
       CSChordFraction: 0
-      T: {fileID: 737449282}
+      T: {fileID: 659548964}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -12488,7 +12604,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0.77, z: -1.465}
       TrailTip: {x: 0, y: 1.54, z: -1.46}
       CSChordFraction: 0
-      T: {fileID: 1172704826}
+      T: {fileID: 603485779}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -12625,7 +12741,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 1.54, z: -1.46}
       TrailTip: {x: 0, y: 2.31, z: -1.455}
       CSChordFraction: 0
-      T: {fileID: 913497172}
+      T: {fileID: 1804800562}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -12762,7 +12878,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 2.31, z: -1.455}
       TrailTip: {x: 0, y: 3.08, z: -1.45}
       CSChordFraction: 0
-      T: {fileID: 1521780405}
+      T: {fileID: 258291407}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -12954,36 +13070,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 33
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &793184709
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 793184710}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &793184710
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793184709}
-  m_LocalRotation: {x: -0.0000074757254, y: 0.00000005960237, z: 5.2013777e-10, w: 1}
-  m_LocalPosition: {x: -10.038868, y: 0.2652578, z: 1.0340358}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &793861517
 GameObject:
@@ -13441,36 +13527,6 @@ Transform:
   m_Father: {fileID: 1715462870}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &844622071
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 844622072}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &844622072
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844622071}
-  m_LocalRotation: {x: 0.000000028067003, y: 0.00045290584, z: 0.00006197555, w: 0.9999999}
-  m_LocalPosition: {x: -3.325392, y: -0.45502198, z: 0.8869238}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1875415297}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &846493424
 GameObject:
   m_ObjectHideFlags: 0
@@ -13537,36 +13593,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &847878803
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 847878804}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &847878804
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847878803}
-  m_LocalRotation: {x: 0.000006527639, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.306447, y: 0.35136247, z: 1.1476135}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &848289784
 GameObject:
@@ -13754,36 +13780,6 @@ MonoBehaviour:
     SteepWeight: 25
     HeightWeight: 25
     Randomness: 0
---- !u!1 &863243713
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 863243714}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &863243714
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863243713}
-  m_LocalRotation: {x: 0.0000025089823, y: 0.0002763698, z: -0.000013934438, w: 1}
-  m_LocalPosition: {x: -3.895313, y: -0.15207677, z: 0.48345512}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865394310
 GameObject:
   m_ObjectHideFlags: 0
@@ -14295,6 +14291,36 @@ MonoBehaviour:
     SteepWeight: 25
     HeightWeight: 25
     Randomness: 0
+--- !u!1 &885024913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885024914}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &885024914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885024913}
+  m_LocalRotation: {x: 0.0000034766267, y: 0.000000043655742, z: -0.029129535, w: 0.9995757}
+  m_LocalPosition: {x: 0.9001954, y: -0.05249616, z: 0.22367804}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &890568876
 GameObject:
   m_ObjectHideFlags: 0
@@ -14503,36 +14529,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906607759}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &913497171
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 913497172}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &913497172
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913497171}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00024366379, y: 1.9250244, z: -0.4419241}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 790446398}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &918873561
 GameObject:
   m_ObjectHideFlags: 0
@@ -15220,6 +15216,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &953387393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953387394}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &953387394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953387393}
+  m_LocalRotation: {x: 0.000011654571, y: 0.0000003807363, z: -0.033905, w: 0.9994251}
+  m_LocalPosition: {x: -5.084766, y: -0.07122313, z: 0.5901071}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959300695
 GameObject:
@@ -15943,7 +15969,7 @@ Transform:
   m_Father: {fileID: 890568877}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &990925921
+--- !u!1 &987759321
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15951,7 +15977,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 990925922}
+  - component: {fileID: 987759322}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -15959,19 +15985,79 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &990925922
+--- !u!4 &987759322
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 990925921}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00024175644, y: 0.38498536, z: -0.064484596}
+  m_GameObject: {fileID: 987759321}
+  m_LocalRotation: {x: 0.0000065229824, y: 0.00000020195145, z: -0.033905003, w: 0.99942505}
+  m_LocalPosition: {x: -11.306447, y: 0.3513624, z: 1.1476173}
   m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 290763644}
-  m_RootOrder: 0
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &992413769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 992413770}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &992413770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992413769}
+  m_LocalRotation: {x: 0.000027097758, y: 0.00039792055, z: 0.0679463, w: 0.9976889}
+  m_LocalPosition: {x: -2.3751965, y: -0.3250171, z: 0.47066307}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1875415297}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &995748641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 995748642}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &995748642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995748641}
+  m_LocalRotation: {x: 0.000014353542, y: 0.00024404668, z: 0.029129526, w: 0.9995756}
+  m_LocalPosition: {x: -2.7751958, y: -0.16184902, z: 0.34385902}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996068169
 GameObject:
@@ -16494,7 +16580,8 @@ MonoBehaviour:
   AileronLinks:
   - {fileID: 280052635}
   - {fileID: 1181224317}
-  Speed: 0.025
+  SpeedAileron: 0
+  SpeedElevator: 0
   ElevGain: 0.5
   AilGain: -0.8
 --- !u!114 &1012370323
@@ -16590,36 +16677,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 59
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1019106196
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1019106197}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1019106197
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1019106196}
-  m_LocalRotation: {x: 0.000006527639, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.306447, y: 0.3513624, z: 1.1476173}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023811921
 GameObject:
@@ -18088,6 +18145,36 @@ Transform:
   m_Father: {fileID: 1216587200}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1066473991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1066473992}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1066473992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066473991}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.00024175644, y: 0.38498536, z: -0.064484596}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 290763644}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1080850288
 GameObject:
   m_ObjectHideFlags: 0
@@ -18360,6 +18447,36 @@ Transform:
   - {fileID: 1234565160}
   m_Father: {fileID: 439095349}
   m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1103153756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103153757}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1103153757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103153756}
+  m_LocalRotation: {x: -0.000007472, y: -0.00000015579279, z: -0.033904985, w: 0.99942505}
+  m_LocalPosition: {x: -10.038868, y: 0.2652578, z: 1.0340358}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1103156094
 GameObject:
@@ -19027,6 +19144,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1715462870}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1118497571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1118497572}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118497572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118497571}
+  m_LocalRotation: {x: 0.0000025089828, y: -0.00000014237592, z: 0.033905007, w: 0.9994251}
+  m_LocalPosition: {x: 3.895313, y: -0.15207675, z: 0.48345417}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1133522357
 GameObject:
@@ -19934,7 +20081,8 @@ MonoBehaviour:
   AileronLinks:
   - {fileID: 1715462868}
   - {fileID: 1160103830}
-  Speed: 0.025
+  SpeedAileron: 0
+  SpeedElevator: 0
   ElevGain: 0.35
   AilGain: -0.8
 --- !u!114 &1169828451
@@ -20106,66 +20254,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2072617458}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1172704825
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1172704826}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1172704826
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1172704825}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00024366379, y: 1.1550049, z: -0.2532034}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 790446398}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1174993060
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1174993061}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1174993061
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1174993060}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00024175644, y: 2.694983, z: -0.6306467}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 290763644}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1177993644
 GameObject:
@@ -20823,7 +20911,8 @@ MonoBehaviour:
   - {fileID: 1662347213}
   ElevatorLinks: []
   AileronLinks: []
-  Speed: 0.1
+  SpeedAileron: 0
+  SpeedElevator: 0
   ElevGain: 0.3
   AilGain: 0.3
 --- !u!114 &1195658162
@@ -21574,36 +21663,6 @@ Transform:
   m_Father: {fileID: 1094687581}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1241095124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1241095125}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1241095125
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1241095124}
-  m_LocalRotation: {x: 0.000013412906, y: 0.000000029801186, z: 2.6006888e-10, w: 1}
-  m_LocalPosition: {x: -7.5037117, y: 0.09304859, z: 0.80687463}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1247079329
 GameObject:
   m_ObjectHideFlags: 0
@@ -21689,36 +21748,6 @@ SkinnedMeshRenderer:
     m_Center: {x: 1.1641532e-10, y: 0.0026479382, z: -0.000029192772}
     m_Extent: {x: 0.0005818035, y: 0.002518179, z: 0.0007848273}
   m_DirtyAABB: 0
---- !u!1 &1247361928
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1247361929}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1247361929
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1247361928}
-  m_LocalRotation: {x: 0.0000038594003, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.77129, y: 0.17915319, z: 0.9204552}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1251698613
 GameObject:
   m_ObjectHideFlags: 0
@@ -21760,7 +21789,8 @@ MonoBehaviour:
   AileronLinks:
   - {fileID: 2072617456}
   - {fileID: 1032323195}
-  Speed: 0.025
+  SpeedAileron: 0
+  SpeedElevator: 0
   ElevGain: 0.35
   AilGain: -0.8
 --- !u!114 &1251698615
@@ -22073,6 +22103,36 @@ Transform:
   m_Father: {fileID: 1715462870}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1267272628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1267272629}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1267272629
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267272628}
+  m_LocalRotation: {x: -0, y: 0.000000029802319, z: -0.06794634, w: 0.997689}
+  m_LocalPosition: {x: 1.4249992, y: -0.19501221, z: 0.054403305}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1715041057}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1268795689
 GameObject:
   m_ObjectHideFlags: 0
@@ -22338,36 +22398,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283702737}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1286321320
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1286321321}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1286321321
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286321320}
-  m_LocalRotation: {x: 0.0000038594003, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.77129, y: 0.17915323, z: 0.9204533}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1294460795
 GameObject:
   m_ObjectHideFlags: 0
@@ -22773,36 +22803,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1160103832}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1343802943
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1343802944}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1343802944
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343802943}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00024175644, y: 1.9250244, z: -0.441926}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 290763644}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1353381196
 GameObject:
@@ -23427,6 +23427,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386667605}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1390534013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1390534014}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1390534014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390534013}
+  m_LocalRotation: {x: 0.0000024177132, y: 0.0000001422304, z: -0.03390499, w: 0.9994251}
+  m_LocalPosition: {x: -6.275196, y: 0.009569469, z: 0.6967584}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397974256
 GameObject:
   m_ObjectHideFlags: 0
@@ -23672,6 +23702,36 @@ Transform:
   m_Father: {fileID: 1032323197}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1420745493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420745494}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1420745494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420745493}
+  m_LocalRotation: {x: 0.0000024130566, y: -0.00000008265487, z: 0.033904992, w: 0.9994251}
+  m_LocalPosition: {x: 6.275196, y: 0.0095695015, z: 0.6967565}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1431931871
 GameObject:
   m_ObjectHideFlags: 0
@@ -23731,6 +23791,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1032323197}
   m_RootOrder: 54
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1444518975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444518976}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444518976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444518975}
+  m_LocalRotation: {x: 0.000009839423, y: -0.0000002522429, z: 0.029129533, w: 0.99957573}
+  m_LocalPosition: {x: -1.7253911, y: -0.100600906, z: 0.17131744}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1444734335
 GameObject:
@@ -24752,17 +24842,17 @@ Transform:
   m_LocalPosition: {x: -0.8, y: 0.237, z: -1.3080566}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1523551481}
-  - {fileID: 18257775}
-  - {fileID: 1723325118}
-  - {fileID: 640045052}
-  - {fileID: 863243714}
-  - {fileID: 122936503}
-  - {fileID: 1630712854}
-  - {fileID: 1241095125}
-  - {fileID: 1247361929}
-  - {fileID: 793184710}
-  - {fileID: 1019106197}
+  - {fileID: 694358984}
+  - {fileID: 716256310}
+  - {fileID: 1444518976}
+  - {fileID: 995748642}
+  - {fileID: 1575171063}
+  - {fileID: 953387394}
+  - {fileID: 1390534014}
+  - {fileID: 155264946}
+  - {fileID: 1836153078}
+  - {fileID: 1103153757}
+  - {fileID: 987759322}
   m_Father: {fileID: 270644452}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -1, y: 0, z: 0}
@@ -24990,7 +25080,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -3.8600001}
       TrailTip: {x: -0.6, y: -0.035, z: -3.1550002}
       CSChordFraction: 0
-      T: {fileID: 1523551481}
+      T: {fileID: 694358984}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25163,7 +25253,7 @@ MonoBehaviour:
       TrailRoot: {x: -0.6, y: -0.035, z: -3.1550002}
       TrailTip: {x: -1.2, y: -0.07, z: -2.4500003}
       CSChordFraction: 0
-      T: {fileID: 18257775}
+      T: {fileID: 716256310}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25366,7 +25456,7 @@ MonoBehaviour:
       TrailRoot: {x: -1.2, y: -0.07, z: -2.4500003}
       TrailTip: {x: -2.25, y: -0.13125, z: -1.9200002}
       CSChordFraction: 0
-      T: {fileID: 1723325118}
+      T: {fileID: 1444518976}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25539,7 +25629,7 @@ MonoBehaviour:
       TrailRoot: {x: -2.25, y: -0.13125, z: -1.9200002}
       TrailTip: {x: -3.3, y: -0.19249998, z: -1.3900001}
       CSChordFraction: 0
-      T: {fileID: 640045052}
+      T: {fileID: 995748642}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25742,7 +25832,7 @@ MonoBehaviour:
       TrailRoot: {x: -3.3, y: -0.19249998, z: -1.3900001}
       TrailTip: {x: -4.49, y: -0.11166665, z: -1.1766667}
       CSChordFraction: 0
-      T: {fileID: 863243714}
+      T: {fileID: 1575171063}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -25915,7 +26005,7 @@ MonoBehaviour:
       TrailRoot: {x: -4.49, y: -0.11166665, z: -1.1766667}
       TrailTip: {x: -5.68, y: -0.03083332, z: -0.96333337}
       CSChordFraction: 0
-      T: {fileID: 122936503}
+      T: {fileID: 953387394}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -26088,7 +26178,7 @@ MonoBehaviour:
       TrailRoot: {x: -5.68, y: -0.03083332, z: -0.96333337}
       TrailTip: {x: -6.87, y: 0.05, z: -0.75}
       CSChordFraction: 0
-      T: {fileID: 1630712854}
+      T: {fileID: 1390534014}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -26291,7 +26381,7 @@ MonoBehaviour:
       TrailRoot: {x: -6.87, y: 0.05, z: -0.75}
       TrailTip: {x: -8.1375, y: 0.13609767, z: -0.5227731}
       CSChordFraction: 0.39
-      T: {fileID: 1241095125}
+      T: {fileID: 155264946}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -26464,7 +26554,7 @@ MonoBehaviour:
       TrailRoot: {x: -8.1375, y: 0.13609767, z: -0.5227731}
       TrailTip: {x: -9.405, y: 0.22219536, z: -0.29554617}
       CSChordFraction: 0.39
-      T: {fileID: 1247361929}
+      T: {fileID: 1836153078}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -26637,7 +26727,7 @@ MonoBehaviour:
       TrailRoot: {x: -9.405, y: 0.22219536, z: -0.29554617}
       TrailTip: {x: -10.6725, y: 0.308293, z: -0.06831926}
       CSChordFraction: 0.39
-      T: {fileID: 793184710}
+      T: {fileID: 1103153757}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -26810,7 +26900,7 @@ MonoBehaviour:
       TrailRoot: {x: -10.6725, y: 0.308293, z: -0.06831926}
       TrailTip: {x: -11.94, y: 0.3943907, z: 0.15890765}
       CSChordFraction: 0.39
-      T: {fileID: 1019106197}
+      T: {fileID: 987759322}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -27061,66 +27151,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521082372}
   m_Mesh: {fileID: 3002153450142441180, guid: a725955ca323ea844914eed9c1c50e32, type: 3}
---- !u!1 &1521780404
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1521780405}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1521780405
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521780404}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.00024366379, y: 2.694983, z: -0.6306448}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 790446398}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1523551480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1523551481}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1523551481
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523551480}
-  m_LocalRotation: {x: 0.0000017508862, y: -0.000121815494, z: -0.000009240382, w: 1}
-  m_LocalPosition: {x: -0.2996096, y: -0.017478034, z: 0.50118726}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1532111462
 GameObject:
   m_ObjectHideFlags: 0
@@ -27332,6 +27362,36 @@ MonoBehaviour:
   TipPosition: {x: -1258.86, y: 17.550999, z: -2365.7}
   RootPosition: {x: -1247.2201, y: 17.151, z: -2367.26}
   ParentWing: {fileID: 865394312}
+--- !u!1 &1540910725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1540910726}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1540910726
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540910725}
+  m_LocalRotation: {x: 0.0000038603316, y: -0.00000014231772, z: 0.033905, w: 0.99942505}
+  m_LocalPosition: {x: 8.77129, y: 0.17915323, z: 0.9204533}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1542349070
 GameObject:
   m_ObjectHideFlags: 0
@@ -27889,7 +27949,7 @@ Transform:
   m_Father: {fileID: 2072617458}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1569089203
+--- !u!1 &1575171062
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27897,7 +27957,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1569089204}
+  - component: {fileID: 1575171063}
   m_Layer: 0
   m_Name: Velocity Tracker
   m_TagString: Untagged
@@ -27905,19 +27965,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1569089204
+--- !u!4 &1575171063
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1569089203}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4249992, y: -0.19501221, z: 0.054403305}
+  m_GameObject: {fileID: 1575171062}
+  m_LocalRotation: {x: 0.0000025117768, y: 0.000000023224853, z: -0.03390501, w: 0.9994251}
+  m_LocalPosition: {x: -3.895313, y: -0.15207677, z: 0.48345512}
   m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
   m_Children: []
-  m_Father: {fileID: 1715041057}
-  m_RootOrder: 1
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1576558371
 GameObject:
@@ -28681,36 +28741,6 @@ MonoBehaviour:
     SteepWeight: 25
     HeightWeight: 25
     Randomness: 0
---- !u!1 &1630712853
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1630712854}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1630712854
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1630712853}
-  m_LocalRotation: {x: 0.0000024177132, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.275196, y: 0.009569469, z: 0.6967584}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1632729289
 GameObject:
   m_ObjectHideFlags: 0
@@ -29138,36 +29168,6 @@ MonoBehaviour:
   ControlInput: 0
   speed: 0.2
   invert: 0
---- !u!1 &1664268944
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1664268945}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1664268945
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664268944}
-  m_LocalRotation: {x: 0.000013412906, y: 0.000000029801186, z: 2.6006888e-10, w: 1}
-  m_LocalPosition: {x: 7.5037117, y: 0.09304862, z: 0.8068727}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667640356
 GameObject:
   m_ObjectHideFlags: 0
@@ -29439,36 +29439,6 @@ MonoBehaviour:
     SteepWeight: 25
     HeightWeight: 25
     Randomness: 0
---- !u!1 &1701913654
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1701913655}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1701913655
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701913654}
-  m_LocalRotation: {x: 0.000011667607, y: 0.0002941493, z: 0.000025143097, w: 1}
-  m_LocalPosition: {x: 5.084766, y: -0.07122312, z: 0.5901061}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703941044
 GameObject:
   m_ObjectHideFlags: 0
@@ -29861,10 +29831,10 @@ Transform:
   m_LocalPosition: {x: 0.2, y: 0.62, z: -9.548057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 217064364}
-  - {fileID: 1569089204}
-  - {fileID: 715668413}
-  - {fileID: 538888883}
+  - {fileID: 476079651}
+  - {fileID: 1267272629}
+  - {fileID: 1958340601}
+  - {fileID: 2055475568}
   m_Father: {fileID: 270644452}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -30056,7 +30026,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -2.16}
       TrailTip: {x: 0.95, y: -0.13, z: -1.5975001}
       CSChordFraction: 0.44
-      T: {fileID: 217064364}
+      T: {fileID: 476079651}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -30193,7 +30163,7 @@ MonoBehaviour:
       TrailRoot: {x: 0.95, y: -0.13, z: -1.5975001}
       TrailTip: {x: 1.9, y: -0.26, z: -1.0350001}
       CSChordFraction: 0.44
-      T: {fileID: 1569089204}
+      T: {fileID: 1267272629}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -30330,7 +30300,7 @@ MonoBehaviour:
       TrailRoot: {x: 1.9, y: -0.26, z: -1.0350001}
       TrailTip: {x: 2.85, y: -0.39, z: -0.4725001}
       CSChordFraction: 0.44
-      T: {fileID: 715668413}
+      T: {fileID: 1958340601}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -30467,7 +30437,7 @@ MonoBehaviour:
       TrailRoot: {x: 2.85, y: -0.39, z: -0.4725001}
       TrailTip: {x: 3.8, y: -0.52, z: 0.089999914}
       CSChordFraction: 0.44
-      T: {fileID: 538888883}
+      T: {fileID: 2055475568}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -31001,36 +30971,6 @@ Transform:
   m_Father: {fileID: 959300696}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1723325117
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1723325118}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1723325118
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1723325117}
-  m_LocalRotation: {x: 0.000009846873, y: 0.00020729487, z: 0.000015719317, w: 1}
-  m_LocalPosition: {x: -1.7253911, y: -0.100600906, z: 0.17131744}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1515198111}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1737440264
 GameObject:
   m_ObjectHideFlags: 0
@@ -31104,7 +31044,8 @@ MonoBehaviour:
   AileronLinks:
   - {fileID: 2081341533}
   - {fileID: 1116366934}
-  Speed: 0.025
+  SpeedAileron: 0
+  SpeedElevator: 0
   ElevGain: 0.2
   AilGain: -0.8
 --- !u!114 &1737761806
@@ -31527,7 +31468,8 @@ MonoBehaviour:
   AileronLinks:
   - {fileID: 248979781}
   - {fileID: 338342854}
-  Speed: 0.025
+  SpeedAileron: 0
+  SpeedElevator: 0
   ElevGain: 0.35
   AilGain: -0.8
 --- !u!1 &1757253438
@@ -32061,17 +32003,17 @@ Transform:
   m_LocalPosition: {x: 0.8, y: 0.237, z: -1.3080566}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 254594331}
-  - {fileID: 621030281}
-  - {fileID: 788567941}
-  - {fileID: 2077379090}
-  - {fileID: 197443901}
-  - {fileID: 1701913655}
-  - {fileID: 129695932}
-  - {fileID: 1664268945}
-  - {fileID: 1286321321}
-  - {fileID: 2068833008}
-  - {fileID: 847878804}
+  - {fileID: 296950521}
+  - {fileID: 885024914}
+  - {fileID: 593103619}
+  - {fileID: 566740950}
+  - {fileID: 1118497572}
+  - {fileID: 2101032249}
+  - {fileID: 1420745494}
+  - {fileID: 682783306}
+  - {fileID: 1540910726}
+  - {fileID: 404687054}
+  - {fileID: 313882775}
   m_Father: {fileID: 270644452}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -1, y: 0, z: 0}
@@ -32299,7 +32241,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -3.8600001}
       TrailTip: {x: 0.6, y: -0.035, z: -3.1550002}
       CSChordFraction: 0
-      T: {fileID: 254594331}
+      T: {fileID: 296950521}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -32472,7 +32414,7 @@ MonoBehaviour:
       TrailRoot: {x: 0.6, y: -0.035, z: -3.1550002}
       TrailTip: {x: 1.2, y: -0.07, z: -2.4500003}
       CSChordFraction: 0
-      T: {fileID: 621030281}
+      T: {fileID: 885024914}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -32675,7 +32617,7 @@ MonoBehaviour:
       TrailRoot: {x: 1.2, y: -0.07, z: -2.4500003}
       TrailTip: {x: 2.25, y: -0.13125, z: -1.9200002}
       CSChordFraction: 0
-      T: {fileID: 788567941}
+      T: {fileID: 593103619}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -32848,7 +32790,7 @@ MonoBehaviour:
       TrailRoot: {x: 2.25, y: -0.13125, z: -1.9200002}
       TrailTip: {x: 3.3, y: -0.19249998, z: -1.3900001}
       CSChordFraction: 0
-      T: {fileID: 2077379090}
+      T: {fileID: 566740950}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -33051,7 +32993,7 @@ MonoBehaviour:
       TrailRoot: {x: 3.3, y: -0.19249998, z: -1.3900001}
       TrailTip: {x: 4.49, y: -0.11166665, z: -1.1766667}
       CSChordFraction: 0
-      T: {fileID: 197443901}
+      T: {fileID: 1118497572}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -33224,7 +33166,7 @@ MonoBehaviour:
       TrailRoot: {x: 4.49, y: -0.11166665, z: -1.1766667}
       TrailTip: {x: 5.68, y: -0.03083332, z: -0.96333337}
       CSChordFraction: 0
-      T: {fileID: 1701913655}
+      T: {fileID: 2101032249}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -33397,7 +33339,7 @@ MonoBehaviour:
       TrailRoot: {x: 5.68, y: -0.03083332, z: -0.96333337}
       TrailTip: {x: 6.87, y: 0.05, z: -0.75}
       CSChordFraction: 0
-      T: {fileID: 129695932}
+      T: {fileID: 1420745494}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -33600,7 +33542,7 @@ MonoBehaviour:
       TrailRoot: {x: 6.87, y: 0.05, z: -0.75}
       TrailTip: {x: 8.1375, y: 0.13609767, z: -0.5227731}
       CSChordFraction: 0.39
-      T: {fileID: 1664268945}
+      T: {fileID: 682783306}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -33773,7 +33715,7 @@ MonoBehaviour:
       TrailRoot: {x: 8.1375, y: 0.13609767, z: -0.5227731}
       TrailTip: {x: 9.405, y: 0.22219536, z: -0.29554617}
       CSChordFraction: 0.39
-      T: {fileID: 1286321321}
+      T: {fileID: 1540910726}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -33946,7 +33888,7 @@ MonoBehaviour:
       TrailRoot: {x: 9.405, y: 0.22219536, z: -0.29554617}
       TrailTip: {x: 10.6725, y: 0.308293, z: -0.06831926}
       CSChordFraction: 0.39
-      T: {fileID: 2068833008}
+      T: {fileID: 404687054}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -34119,7 +34061,7 @@ MonoBehaviour:
       TrailRoot: {x: 10.6725, y: 0.308293, z: -0.06831926}
       TrailTip: {x: 11.94, y: 0.3943907, z: 0.15890765}
       CSChordFraction: 0.39
-      T: {fileID: 847878804}
+      T: {fileID: 313882775}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -34448,6 +34390,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801368231}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1804800561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1804800562}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1804800562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804800561}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.00024366379, y: 1.9250244, z: -0.4419241}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 790446398}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1805348310
 GameObject:
   m_ObjectHideFlags: 0
@@ -34876,6 +34848,66 @@ MonoBehaviour:
   TipPosition: {x: 0, y: 0, z: 0}
   RootPosition: {x: 0, y: 0, z: 0}
   ParentWing: {fileID: 0}
+--- !u!1 &1835063816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1835063817}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1835063817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835063816}
+  m_LocalRotation: {x: -0.000021871178, y: -0.0003210902, z: 0.06794631, w: 0.9976889}
+  m_LocalPosition: {x: -0.4748057, y: -0.06500733, z: -0.36185646}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1875415297}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1836153077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1836153078}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1836153078
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836153077}
+  m_LocalRotation: {x: 0.0000038594003, y: 0.00000014231772, z: -0.033905, w: 0.99942505}
+  m_LocalPosition: {x: -8.77129, y: 0.17915319, z: 0.9204552}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1515198111}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1839465395
 GameObject:
   m_ObjectHideFlags: 0
@@ -34905,6 +34937,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1160103832}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1843757145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843757146}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843757146
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843757145}
+  m_LocalRotation: {x: -0, y: -0, z: 0.06794632, w: 0.99768895}
+  m_LocalPosition: {x: -3.325392, y: -0.45502198, z: 0.8869238}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1875415297}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849768116
 GameObject:
@@ -35315,10 +35377,10 @@ Transform:
   m_LocalPosition: {x: -0.2, y: 0.62, z: -9.548057}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 559029457}
-  - {fileID: 673996342}
-  - {fileID: 751014626}
-  - {fileID: 844622072}
+  - {fileID: 1835063817}
+  - {fileID: 56519826}
+  - {fileID: 992413770}
+  - {fileID: 1843757146}
   m_Father: {fileID: 270644452}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35494,7 +35556,7 @@ MonoBehaviour:
       TrailRoot: {x: 0, y: 0, z: -2.16}
       TrailTip: {x: -0.95, y: -0.13, z: -1.5975001}
       CSChordFraction: 0.44
-      T: {fileID: 559029457}
+      T: {fileID: 1835063817}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -35631,7 +35693,7 @@ MonoBehaviour:
       TrailRoot: {x: -0.95, y: -0.13, z: -1.5975001}
       TrailTip: {x: -1.9, y: -0.26, z: -1.0350001}
       CSChordFraction: 0.44
-      T: {fileID: 673996342}
+      T: {fileID: 56519826}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -35768,7 +35830,7 @@ MonoBehaviour:
       TrailRoot: {x: -1.9, y: -0.26, z: -1.0350001}
       TrailTip: {x: -2.85, y: -0.39, z: -0.4725001}
       CSChordFraction: 0.44
-      T: {fileID: 751014626}
+      T: {fileID: 992413770}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -35905,7 +35967,7 @@ MonoBehaviour:
       TrailRoot: {x: -2.85, y: -0.39, z: -0.4725001}
       TrailTip: {x: -3.8, y: -0.52, z: 0.089999914}
       CSChordFraction: 0.44
-      T: {fileID: 844622072}
+      T: {fileID: 1843757146}
       CLcurve:
         serializedVersion: 2
         m_Curve:
@@ -37456,6 +37518,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957217891}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1958340600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1958340601}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1958340601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958340600}
+  m_LocalRotation: {x: 0.000027097758, y: -0.00039792055, z: -0.06794631, w: 0.9976889}
+  m_LocalPosition: {x: 2.3751945, y: -0.3250171, z: 0.47066307}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1715041057}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1960062331
 GameObject:
   m_ObjectHideFlags: 0
@@ -39016,7 +39108,8 @@ MonoBehaviour:
   - {fileID: 1935791674}
   ElevatorLinks: []
   AileronLinks: []
-  Speed: 0.2
+  SpeedAileron: 0
+  SpeedElevator: 0
   ElevGain: 0.4
   AilGain: 0.18
 --- !u!114 &2052710264
@@ -39057,6 +39150,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7efca28d2fcb634abb8e7072d5a6111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2055475567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055475568}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2055475568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055475567}
+  m_LocalRotation: {x: -0, y: -0, z: -0.06794632, w: 0.99768895}
+  m_LocalPosition: {x: 3.32539, y: -0.45502198, z: 0.8869219}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1715041057}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059789766
 GameObject:
   m_ObjectHideFlags: 0
@@ -39535,7 +39658,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059789766}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2068833007
+--- !u!1 &2065761862
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39543,28 +39666,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2068833008}
+  - component: {fileID: 2065761863}
+  - component: {fileID: 2065761864}
   m_Layer: 0
-  m_Name: Velocity Tracker
+  m_Name: Engine (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2068833008
+--- !u!4 &2065761863
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068833007}
-  m_LocalRotation: {x: -0.0000074757254, y: 0.00000005960237, z: 5.2013777e-10, w: 1}
-  m_LocalPosition: {x: 10.038868, y: 0.26525784, z: 1.0340339}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_GameObject: {fileID: 2065761862}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.081055, y: 0.1038208, z: 2.1650398}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1799648324}
+  m_Father: {fileID: 270644452}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2065761864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065761862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998139a69d25a654384dd11c0c7d3505, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PropDiameter: 0
+  PropRPM: 3000
+  PropEfficiency:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  AdvanceRatio: 0
+  KWPower: 0
+  CurrentVelocity: 0
+  Knots: 0
+  Thrust: NaN
 --- !u!1 &2069140811
 GameObject:
   m_ObjectHideFlags: 0
@@ -40236,36 +40385,6 @@ MonoBehaviour:
   Input: 0
   Name: 
   Invert: 0
---- !u!1 &2077379089
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2077379090}
-  m_Layer: 0
-  m_Name: Velocity Tracker
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2077379090
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077379089}
-  m_LocalRotation: {x: 0.0000072391695, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7751958, y: -0.16184899, z: 0.34385806}
-  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
-  m_Children: []
-  m_Father: {fileID: 1799648324}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2080711641
 GameObject:
   m_ObjectHideFlags: 0
@@ -40891,6 +41010,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1103156095}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2101032248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2101032249}
+  m_Layer: 0
+  m_Name: Velocity Tracker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2101032249
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101032248}
+  m_LocalRotation: {x: 0.000011650845, y: -0.0000003807363, z: 0.033905, w: 0.9994251}
+  m_LocalPosition: {x: 5.084766, y: -0.07122312, z: 0.5901061}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_Children: []
+  m_Father: {fileID: 1799648324}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2108878741
 GameObject:
