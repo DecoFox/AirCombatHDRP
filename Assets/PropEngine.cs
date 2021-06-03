@@ -16,6 +16,15 @@ public class PropEngine : MonoBehaviour
     public float CurrentVelocity;
     public float Knots;
 
+    public float Throttle;
+
+    public AudioSource IdleSound;
+    public AudioSource RunningSound;
+
+    public GameObject Propeller;
+    public GameObject Disk;
+    public GameObject Hub;
+
 
     public float Thrust;
     // Start is called before the first frame update
@@ -28,7 +37,13 @@ public class PropEngine : MonoBehaviour
     void FixedUpdate()
     {
 
-        
+        float WorkingThrottle = Mathf.Clamp(Throttle, 0, 100) / 100;
+        RunningSound.volume = WorkingThrottle;
+        IdleSound.volume = (1 - (WorkingThrottle / 2)) / 4;
+        //RunningSound.pitch = 0.75f + (AdvanceRatio / 2);
+        RunningSound.pitch = 0.75f + (WorkingThrottle / 2.5f) + ((-0.5f + (AdvanceRatio / 2)) * 0.5f);
+
+        float ThrotKWPower = KWPower * WorkingThrottle;
         /*
             In calculus terms, power is the derivative of work with respect to time. ... 
             Since work is force times displacement (W=F*d), and velocity is displacement over time (v=d/t), 
@@ -48,7 +63,7 @@ public class PropEngine : MonoBehaviour
         what final velocity can we attain
         This whole concept is losing me where force and work meet
         */
-        float Power = KWPower * 1000;
+        float Power = ThrotKWPower * 1000;
 
         Rigidbody R = gameObject.GetComponentInParent<Rigidbody>();
         CurrentVelocity = R.velocity.magnitude;
@@ -61,7 +76,12 @@ public class PropEngine : MonoBehaviour
 
 
         Knots = CurrentVelocity * 1.944f;
-        R.AddForce(R.transform.forward * Thrust);
+        //R.AddForce(R.transform.forward * Thrust);
+        R.AddForceAtPosition(R.transform.forward * Thrust, transform.position);
 
+
+        //Prop Animation----------
+        Hub.transform.rotation = Hub.transform.rotation * new Quaternion(0, 0, 1 + (WorkingThrottle / 2.5f) + ((-0.5f + (AdvanceRatio / 2)) * 0.5f), 1);
+        Propeller.GetComponent<Renderer>().material.SetColor("_BaseColor", new Color(1,1,1,1 - (WorkingThrottle * 1)));
     }
 }
